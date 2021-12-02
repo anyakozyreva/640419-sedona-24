@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона Форма отзыва</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+
+    <!-- logo -->
+    <a class="page-header__logo-link" href="#">
+      <img src="" width="" height="" alt="">
+    </a>
+
+    <!-- бургер -->
+    <button class="page-header__burger burger" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+
+    <!-- main navigation -->
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/">
+            Htmlacademy
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">
+      Форма обратной связи
+    </h1>
+    <!-- welcome section -->
+    <header class="welcome">
+      <img class="welcome__slogan" src="" width="" height="" alt="Sedona!">
+    </header>
+
+    <section class="form">
+      <div class="form__intro intro">
+        <h2 class="intro__title">
+          Оставьте свой отзыв
+        </h2>
+        <p class="intro__text">
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+        </p>
+      </div>
+
+      <form action="https://echo.htmlacademy.ru" method="post">
+
+        <!-- контактсные данные -->
+        <fieldset class="">
+          <legend class="">
+            Представьтесь:
+          </legend>
+
+          <ul>
+            <li>
+              <label class="" for="firstname">
+                Имя<sup>*</sup>:
+              </label>
+              <input type="text" name="firstname" id="firstname" placeholder="Петр" required>
+            </li>
+
+            <li>
+              <label class="" for="surname">
+                Фамилия<sup>*</sup>:
+              </label>
+              <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+            </li>
+
+            <li>
+              <label class="" for="midname">
+                Отчество:
+              </label>
+              <input type="text" name="midname" id="midname" placeholder="Александрович" required>
+            </li>
+          </ul>
+
+        </fieldset>
+
+        <!-- обратная связь -->
+        <fieldset class="">
+          <legend class="">
+            Контактная информация:
+          </legend>
+
+          <ul>
+            <li>
+              <label class="" for="phone">
+                Контактный телефон<sup>*</sup>:
+              </label>
+
+              <div>
+                <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+                <button class="" type="button">
+                  <span class="visually-hidden">
+                    Позвонить
+                  </span>
+                </button>
+              </div>
+            </li>
+
+            <li>
+              <label class="" for="email">
+                Электронная почта<sup>*</sup>:
+              </label>
+
+              <div>
+                <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+                <button class="" type="button">
+                  <span class="visually-hidden">
+                    Написать письмо
+                  </span>
+                </button>
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- радиокнопки -->
+        <fieldset class="">
+          <legend class="">
+            Ваше общее впечатление:
+          </legend>
+
+          <ul>
+            <li>
+              <label for="positive-label"></label>
+              <input type="radio" name="rating" id="positive-label" value="positive" checked>
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Скорее положительное
+              </div>
+            </li>
+
+            <li>
+              <label for="negative-label"></label>
+              <input type="radio" name="rating" id="negative-label" value="negative">
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Скорее отрицательное
+              </div>
+            </li>
+
+            <li>
+              <label for="difficult-label"></label>
+              <input type="radio" name="rating" id="difficult-label" value="difficult">
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Затрудняюсь ответить
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- чекбоксы -->
+        <fieldset class="">
+          <legend class="">
+            Посещенные достопримечательности:
+          </legend>
+
+          <ul>
+            <li>
+              <label for="bridge"></label>
+              <input type="checkbox" name="checkbox" id="bridge" checked>
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Мост Дьявола
+              </div>
+            </li>
+
+            <li>
+              <label for="mountain"></label>
+              <input type="checkbox" name="checkbox" id="mountain" checked>
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Гора-Колокол
+              </div>
+            </li>
+
+            <li>
+              <label for="rock"></label>
+              <input type="checkbox" name="checkbox" id="rock">
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Красные скалы
+              </div>
+            </li>
+
+            <li>
+              <label for="slide"></label>
+              <input type="checkbox" name="checkbox" id="slide" checked>
+              <div>
+                <!-- control-mark -->
+              </div>
+              <div>
+                Слайд-парк
+              </div>
+            </li>
+          </ul>
+        </fieldset>
+
+        <!-- комментарий -->
+        <fieldset class="">
+          <legend class="">
+            Опишите свои эмоции:
+          </legend>
+          <label for="comment">
+            <textarea name="comment" id="comment" placeholder="Опишите подробно все свои восторги" cols="40"
+              rows="3"></textarea>
+          </label>
+        </fieldset>
+
+        <!-- кнопка отправки форм -->
+        <div class="">
+          <button class="">
+            Отправить отзыв
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <!-- footer -->
+  <footer class="page-footer">
+
+    <!-- хэштег -->
+    <div class="page-footer__item">
+      #visitSEDONA
+    </div>
+
+    <!-- социальные сети -->
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">
+              Twitter
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://facebook.com/htmlacademy">
+            <span class="visually-hidden">
+              Facebook
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">
+              Youtube
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- HTMLacademy -->
+    <a class="branding" href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано
+      <span class="visually-hidden">
+        HTML Academy
+      </span>
+    </a>
+  </footer>
+
+  <!-- модальное окно - ошибка -->
+  <div class="form-error">
+    <div class="form-error__intro intro">
+      <h2 class="form-error__title">
+        Что-то пошло не так
+      </h2>
+
+        <p class="form-error__text">
+          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+
+    </div>
+  </div>
+
+  <!-- модальное окно - успех -->
+  <div class="form-success">
+    <div class="form-success__intro intro">
+      <h2 class="form-success__title">
+        Ваш отзыв отправлен
+      </h2>
+
+      <p class="form-success__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
+      </p>
+
+      <div>
+        <button class="form-success__button" type="button">
+          Закрыть окно
+        </button>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+
+</html>
