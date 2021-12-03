@@ -49,16 +49,16 @@
         </li>
       </ul>
     </nav>
+
+    <div class="welcome">
+      <img class="welcome__slogan" src="" width="" height="" alt="Sedona!">
+    </div>
   </header>
 
   <main class="page-main">
     <h1 class="visually-hidden">
       Форма обратной связи
     </h1>
-    <!-- welcome section -->
-    <header class="welcome">
-      <img class="welcome__slogan" src="" width="" height="" alt="Sedona!">
-    </header>
 
     <section class="form">
       <div class="form__intro intro">
@@ -70,54 +70,55 @@
         </p>
       </div>
 
-      <form action="https://echo.htmlacademy.ru" method="post">
-
-        <!-- контактсные данные -->
-        <fieldset class="">
-          <legend class="">
+      <form class="form__group form-group" action="https://echo.htmlacademy.ru" method="post">
+        <!-- контактные данные -->
+        <fieldset class="form-group__fieldset data-user">
+          <legend class="data-user__title">
             Представьтесь:
           </legend>
 
-          <ul>
-            <li>
-              <label class="" for="firstname">
+          <ul class="data-user__list data-list">
+            <li class="data-list__item">
+              <label class="data-list__label" for="firstname">
                 Имя<sup>*</sup>:
               </label>
-              <input type="text" name="firstname" id="firstname" placeholder="Петр" required>
+              <input class="data-list__input" type="text" name="firstname" id="firstname" placeholder="Петр" required>
             </li>
 
-            <li>
-              <label class="" for="surname">
+            <li class="data-list__item">
+              <label class="data-list__label" for="surname">
                 Фамилия<sup>*</sup>:
               </label>
-              <input type="text" name="surname" id="surname" placeholder="Иванов" required>
+              <input class="data-list__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
             </li>
 
-            <li>
+            <li class="data-list__item">
               <label class="" for="midname">
                 Отчество:
               </label>
-              <input type="text" name="midname" id="midname" placeholder="Александрович" required>
+              <input class="data-list__input" type="text" name="midname" id="midname" placeholder="Александрович"
+                required>
             </li>
           </ul>
 
         </fieldset>
 
         <!-- обратная связь -->
-        <fieldset class="">
-          <legend class="">
+        <fieldset class="form-group__fieldset contacts-user">
+          <legend class="contacts-user__title">
             Контактная информация:
           </legend>
 
-          <ul>
-            <li>
-              <label class="" for="phone">
+          <ul class="contacts-user__list contacts-list">
+            <li class="contacts-list__item">
+              <label class="contacts-list__label" for="phone">
                 Контактный телефон<sup>*</sup>:
               </label>
 
-              <div>
-                <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-                <button class="" type="button">
+              <div class="contacts-list__input-holder">
+                <input class="contacts-list__input" type="tel" name="phone" id="phone" placeholder="Введите телефон"
+                  required>
+                <button class="contacts-list__button contacts-list__button--phone" type="button">
                   <span class="visually-hidden">
                     Позвонить
                   </span>
@@ -125,14 +126,15 @@
               </div>
             </li>
 
-            <li>
-              <label class="" for="email">
+            <li class="contacts-list__item">
+              <label class="contacts-list__label" for="email">
                 Электронная почта<sup>*</sup>:
               </label>
 
-              <div>
-                <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
-                <button class="" type="button">
+              <div class="contacts-list__input-holder">
+                <input class="contacts-list__input" type="email" name="email" id="email" placeholder="Введите e-mail"
+                  required>
+                <button class="contacts-list__button contacts-list__button--email" type="button">
                   <span class="visually-hidden">
                     Написать письмо
                   </span>
@@ -143,41 +145,42 @@
         </fieldset>
 
         <!-- радиокнопки -->
-        <fieldset class="">
-          <legend class="">
+        <fieldset class="form-group__fieldset user-impress">
+          <legend class="user-impress__title">
             Ваше общее впечатление:
           </legend>
 
-          <ul>
-            <li>
-              <label for="positive-label"></label>
-              <input type="radio" name="rating" id="positive-label" value="positive" checked>
-              <div>
+          <ul class="user-impress__list impress-list">
+            <li class="impress-list__item">
+              <label class="impress-list__label" for="positive-label"></label>
+              <input class="impress-list__input" type="radio" name="rating" id="positive-label" value="positive"
+                checked>
+              <div class="impress-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="impress-list__control-label">
                 Скорее положительное
               </div>
             </li>
 
-            <li>
-              <label for="negative-label"></label>
-              <input type="radio" name="rating" id="negative-label" value="negative">
-              <div>
+            <li class="impress-list__item">
+              <label class="impress-list__label" for="negative-label"></label>
+              <input class="impress-list__input" type="radio" name="rating" id="negative-label" value="negative">
+              <div class="impress-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="impress-list__control-label">
                 Скорее отрицательное
               </div>
             </li>
 
-            <li>
-              <label for="difficult-label"></label>
-              <input type="radio" name="rating" id="difficult-label" value="difficult">
-              <div>
+            <li class="impress-list__item">
+              <label class="impress-list__label" for="difficult-label"></label>
+              <input class="impress-list__input" type="radio" name="rating" id="difficult-label" value="difficult">
+              <div class="impress-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="impress-list__control-label">
                 Затрудняюсь ответить
               </div>
             </li>
@@ -185,52 +188,52 @@
         </fieldset>
 
         <!-- чекбоксы -->
-        <fieldset class="">
-          <legend class="">
+        <fieldset class="form-group__fieldset user-visited">
+          <legend class="user-visited__title">
             Посещенные достопримечательности:
           </legend>
 
-          <ul>
-            <li>
-              <label for="bridge"></label>
-              <input type="checkbox" name="checkbox" id="bridge" checked>
-              <div>
+          <ul class="user-visited__list visited-list">
+            <li class="visited-list__item">
+              <label class="visited-list__label" for="bridge"></label>
+              <input class="visited-list__input" type="checkbox" name="bridge" id="bridge" checked>
+              <div class="visited-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="visited-list__control-label">
                 Мост Дьявола
               </div>
             </li>
 
-            <li>
-              <label for="mountain"></label>
-              <input type="checkbox" name="checkbox" id="mountain" checked>
-              <div>
+            <li class="visited-list__item">
+              <label class="visited-list__label" for="mountain"></label>
+              <input class="visited-list__input" type="checkbox" name="mountain" id="mountain" checked>
+              <div class="visited-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="visited-list__control-label">
                 Гора-Колокол
               </div>
             </li>
 
-            <li>
-              <label for="rock"></label>
-              <input type="checkbox" name="checkbox" id="rock">
-              <div>
+            <li class="visited-list__item">
+              <label class="visited-list__label" for="rock"></label>
+              <input class="visited-list__input" type="checkbox" name="rock" id="rock">
+              <div class="visited-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="visited-list__control-label">
                 Красные скалы
               </div>
             </li>
 
-            <li>
-              <label for="slide"></label>
-              <input type="checkbox" name="checkbox" id="slide" checked>
-              <div>
+            <li class="visited-list__item">
+              <label class="visited-list__label" for="slide"></label>
+              <input class="visited-list__input" type="checkbox" name="slide" id="slide" checked>
+              <div class="visited-list__control-mark">
                 <!-- control-mark -->
               </div>
-              <div>
+              <div class="visited-list__control-label">
                 Слайд-парк
               </div>
             </li>
@@ -238,19 +241,18 @@
         </fieldset>
 
         <!-- комментарий -->
-        <fieldset class="">
-          <legend class="">
+        <fieldset class="form-group__fieldset user-emotion">
+          <legend class="user-emotion__title">
             Опишите свои эмоции:
           </legend>
-          <label for="comment">
-            <textarea name="comment" id="comment" placeholder="Опишите подробно все свои восторги" cols="40"
-              rows="3"></textarea>
+          <label class="user-emotion__label" for="comment">
+            <textarea name="comment" id="comment" placeholder="Опишите подробно все свои восторги" cols="40" rows="3"></textarea>
           </label>
         </fieldset>
 
         <!-- кнопка отправки форм -->
-        <div class="">
-          <button class="">
+        <div class="form-group__wrapper">
+          <button class="form__button">
             Отправить отзыв
           </button>
         </div>
@@ -310,9 +312,9 @@
         Что-то пошло не так
       </h2>
 
-        <p class="form-error__text">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
+      <p class="form-error__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
 
     </div>
   </div>
@@ -333,7 +335,7 @@
           Закрыть окно
         </button>
       </div>
-      
+
     </div>
   </div>
 
