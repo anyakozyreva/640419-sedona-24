@@ -94,7 +94,7 @@
             <span class="text-field__label">
               Отчество:
             </span>
-            <input class="text-field__input" type="text" name="midname" placeholder="Александрович" required>
+            <input class="text-field__input" type="text" name="midname" placeholder="Александрович">
           </label>
         </fieldset>
 
@@ -105,20 +105,24 @@
             Контактная информация:
           </legend>
 
-          <label class="review-form__contact-field contact-field">
-            <span class="contact-field__label">
+          <label class="text-field text-field--phone">
+            <span class="text-field__label">
               Контактный телефон<sup>*</sup>:
             </span>
-            <input class="contact-field__input contact-field__input--phone" name="phone" id="phone"
-              placeholder="Введите телефон" required>
+            <span class="text-field__input-holder">
+              <input class="text-field__input" type="tel" name="phone" placeholder="Введите телефон"
+                required>
+            </span>
           </label>
 
-          <label class="review-form__contact-field contact-field">
-            <span class="contact-field__label">
+          <label class="text-field text-field--email">
+            <span class="text-field__label">
               Электронная почта<sup>*</sup>:
             </span>
-            <input class="contact-field__input contact-field__input--email" type="email" name="email"
-              placeholder="Введите e-mail" required>
+            <span class="text-field__input-holder">
+            <input class="text-field__input" type="email" name="email" placeholder="Введите e-mail"
+              required>
+            </span>
           </label>
         </fieldset>
 
