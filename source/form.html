@@ -70,80 +70,80 @@
         </p>
       </div>
 
-      <form class="form__group" action="https://echo.htmlacademy.ru" method="post">
+      <form class="review-form" action="https://echo.htmlacademy.ru" method="post">
         <!-- данные пользователя -->
-        <fieldset class="form-group">
-          <legend class="form-group__title">
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">
             Представьтесь:
           </legend>
-          <label class="form-group__field">
-            <span class="form-group__label">
+          <label class="review-form__text-field text-field">
+            <span class="text-field__label">
               Имя<sup>*</sup>:
             </span>
-            <input class="form-group__input" type="text" name="firstname" placeholder="Петр" required>
+            <input class="text-field__input" type="text" name="firstname" placeholder="Петр" required>
           </label>
 
-          <label class="form-group__field">
-            <span class="form-group__label">
+          <label class="review-form__text-field text-field">
+            <span class="text-field__label">
               Фамилия<sup>*</sup>:
             </span>
-            <input class="form-group__input" type="text" name="surname" placeholder="Иванов" required>
+            <input class="text-field__input" type="text" name="surname" placeholder="Иванов" required>
           </label>
 
-          <label class="form-group__field">
-            <span class="form-group__label">
+          <label class="review-form__text-field text-field">
+            <span class="text-field__label">
               Отчество:
             </span>
-            <input class="form-group__input" type="text" name="midname" placeholder="Александрович" required>
+            <input class="text-field__input" type="text" name="midname" placeholder="Александрович" required>
           </label>
         </fieldset>
 
 
         <!-- контакты -->
-        <fieldset class="form-group">
-          <legend class="form-group__title">
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">
             Контактная информация:
           </legend>
 
-          <label class="form-group__field">
-            <span class="form-group__label">
+          <label class="review-form__contact-field contact-field">
+            <span class="contact-field__label">
               Контактный телефон<sup>*</sup>:
             </span>
-            <input class="form-group__input form-group__input--phone" name="phone" id="phone"
+            <input class="contact-field__input contact-field__input--phone" name="phone" id="phone"
               placeholder="Введите телефон" required>
           </label>
 
-          <label class="form-group__field">
-            <span class="form-group__label">
+          <label class="review-form__contact-field contact-field">
+            <span class="contact-field__label">
               Электронная почта<sup>*</sup>:
             </span>
-            <input class="form-group__input form-group__input--email" type="email" name="email"
+            <input class="contact-field__input contact-field__input--email" type="email" name="email"
               placeholder="Введите e-mail" required>
           </label>
         </fieldset>
 
 
         <!-- радиокнопки -->
-        <fieldset class="form-group">
-          <legend class="form-group__title">
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">
             Ваше общее впечатление:
           </legend>
 
-          <label class="form-group__radio radio-button">
+          <label class="review-form__radio radio-button">
             <input class="radio-button__input" type="radio" name="feelings" value="positive" checked>
             <span class="radio-button__label">
               Скорее положительное
             </span>
           </label>
 
-          <label class="form-group__radio radio-button">
+          <label class="review-form__radio radio-button">
             <input class="radio-button__input" type="radio" name="feelings" value="negative">
             <span class="radio-button__label">
               Скорее отрицательное
             </span>
           </label>
 
-          <label class="form-group__radio radio-button">
+          <label class="review-form__radio radio-button">
             <input class="radio-button__input" type="radio" name="feelings" value="difficult">
             <span class="radio-button__label">
               Затрудняюсь ответить
@@ -153,33 +153,33 @@
 
 
         <!-- чекбоксы -->
-        <fieldset class="form-group">
-          <legend class="form-group__title">
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">
             Посещенные достопримечательности:
           </legend>
 
-          <label class="form-group__checkbox checkbox">
+          <label class="review-form__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="bridge" checked>
             <span class="checkbox__label">
               Мост Дьявола
             </span>
           </label>
 
-          <label class="form-group__checkbox checkbox">
+          <label class="review-form__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="mountain" checked>
             <span class="checkbox__label">
               Гора-Колокол
             </span>
           </label>
 
-          <label class="form-group__checkbox checkbox">
+          <label class="review-form__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="slide" checked>
             <span class="checkbox__label">
               Слайд-парк
             </span>
           </label>
 
-          <label class="form-group__checkbox checkbox">
+          <label class="review-form__checkbox checkbox">
             <input class="checkbox__input" type="checkbox" name="rock">
             <span class="checkbox__label">
               Красные скалы
@@ -188,8 +188,8 @@
         </fieldset>
 
         <!-- комментарий -->
-        <fieldset class="form-group">
-          <legend class="form-group__title">
+        <fieldset class="review-form__fieldset">
+          <legend class="review-form__title">
             Опишите свои эмоции:
           </legend>
           <label for="comment">
@@ -199,7 +199,7 @@
         </fieldset>
 
         <!-- кнопка отправки форм -->
-        <button class="form__button" type="submit">
+        <button class="review-form__button" type="submit">
           Отправить отзыв
         </button>
       </form>
