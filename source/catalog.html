@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Седона Фото и видео</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+
+    <!-- logo -->
+    <a class="page-header__logo-link" href="#">
+      <img src="" width="" height="" alt="">
+    </a>
+
+    <!-- бургер -->
+    <button class="page-header__burger burger" type="button">
+      <span class="visually-hidden">
+        Открыть меню
+      </span>
+    </button>
+
+    <!-- main navigation -->
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">
+            Главная
+          </a>
+        </li>
+        <li class="main-nav__item main-nav__item--active">
+          <a href="catalog.html">
+            Фото и видео
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">
+            Форма отзыва
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru/">
+            Htmlacademy
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="welcome">
+      <img class="welcome__slogan" src="" width="" height="" alt="Sedona!">
+    </div>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">
+      Галлерея сайта
+    </h1>
+
+    <!-- gallery -->
+    <section class="gallery">
+      <div class="gallery__intro intro">
+        <h2 class="intro__title">
+          Фото и видео
+        </h2>
+        <p class="intro__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+
+      <!-- 1 -->
+      <article class="gallery-item">
+        <a class="gallery-item__image-link" href="#">
+          <img class="gallery-item__image" src="" width="280px" height="280px" alt="Красивая дорога.">
+        </a>
+
+        <div class="gallery-item__main">
+          <h3 class="gallery-item__title">
+            <a class="gallery-item__title-link">
+              Народные просторы
+            </a>
+          </h3>
+
+          <div class="gallery-item__autor">
+            Автор фото: Борис
+          </div>
+
+          <div class="gallery-item__like like">
+            <!-- изображение лайка -->
+            1350
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="gallery-item">
+        <a class="gallery-item__image-link" href="#">
+          <img class="gallery-item__image" src="" width="280px" height="280px" alt="Цветы на фоне гор.">
+        </a>
+
+        <div class="gallery-item__main">
+          <h3 class="gallery-item__title">
+            <a class="gallery-item__title-link">
+              Местная растительность
+            </a>
+          </h3>
+
+          <div class="gallery-item__autor">
+            Автор фото: Сергей
+          </div>
+
+          <div class="gallery-item__like like">
+            <!-- изображение лайка -->
+            143
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="gallery-item">
+        <a class="gallery-item__image-link" href="#">
+          <img class="gallery-item__image" src="" width="280px" height="280px" alt="Дорога в лесу.">
+        </a>
+
+        <div class="gallery-item__main">
+          <h3 class="gallery-item__title">
+            <a class="gallery-item__title-link">
+              Дорога на север
+            </a>
+          </h3>
+
+          <div class="gallery-item__autor">
+            Автор фото: Петр
+          </div>
+
+          <div class="gallery-item__like like">
+            <!-- изображение лайка -->
+            96
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="gallery-item">
+        <a class="gallery-item__image-link" href="#">
+          <img class="gallery-item__image" src="" width="280px" height="280px" alt="Горный массив.">
+        </a>
+
+        <div class="gallery-item__main">
+          <h3 class="gallery-item__title">
+            <a class="gallery-item__title-link">
+              Мост дьявола
+            </a>
+          </h3>
+
+          <div class="gallery-item__autor">
+            Автор фото: Антон
+          </div>
+
+          <div class="gallery-item__like like">
+            <!-- изображение лайка -->
+            254
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="player">
+      <div class="player__intro intro">
+        <h2 class="intro__title">
+          Все еще сомневаетесь?
+        </h2>
+        <p class="intro__text">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+
+      <!-- видео -->
+      <div class="video">
+          <video class="video__item" poster="" preload="metadata">
+            <source src="" type="video/webm">
+            <source src="" type="video/mp4">
+          </video>
+
+        <!-- controls -->
+        <div class="control">
+          <!-- здесь будет иконка replay -->
+          <button class="control__button control__button--replay" type="button">
+            <span class="visually-hidden">
+              Проиграть заново
+            </span>
+          </button>
+
+          <!-- ползунок -->
+          <div class="control-bar">
+            <div class="control-bar__scale">
+              <button class="control-bar__toggle" type="button">
+                <span class="visually-hidden">
+                  Начать просмотр видео с этого места
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- здесь будет иконка subtitles -->
+          <button class="control__button control__button--subtitles" type="button">
+            <span class="visually-hidden">
+              Субтитры
+            </span>
+          </button>
+
+          <!-- здесь будет иконка fullscreen -->
+          <button class="control__button control__button--fullscreen" type="button">
+            <span class="visually-hidden">
+              Полноэкранный режим
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="page-footer">
+
+    <!-- хэштег -->
+    <div class="page-footer__item">
+      #visitSEDONA
+    </div>
+
+    <!-- социальные сети -->
+    <div class="social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">
+              Twitter
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://facebook.com/htmlacademy">
+            <span class="visually-hidden">
+              Facebook
+            </span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">
+              Youtube
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- HTMLacademy -->
+    <a class="branding" href="https://htmlacademy.ru/intensive/adaptive">
+      Разработано
+      <span class="visually-hidden">
+        HTML Academy
+      </span>
+    </a>
+  </footer>
+
+</body>
+
+</html>
