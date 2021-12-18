@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+
+
+<symbol id="menu" viewBox="0 0 23 23">
+  viewBox="0 0 23 22">
+  <path d="M23 0H0v4h23V0ZM23 9H0v4h23V9ZM23 18H0v4h23v-4Z"
+  stroke-width="3" stroke-linecap="round" fill="#81B3D2"/>
+</symbol>
+
+<symbol id="cross" viewBox="0 0 23 23">
+  <path d="m22 3-3-3-8 8-8-8-3 3 8 8-8 8 3 3 8-8 8 8 3-3-8-8 8-8Z"
+  stroke-width="3" stroke-linecap="round" fill="#FFFFFF"/>
+</symbol>
+
+</svg>

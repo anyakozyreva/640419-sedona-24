@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -13,11 +13,15 @@
 
     <!-- logo -->
     <a class="page-header__logo-link" href="#">
-      <img src="" width="" height="" alt="">
+      <img src="img/logo.svg" width="102" height="84" alt="Логотип сайта">
     </a>
 
     <!-- бургер -->
-    <button class="page-header__burger burger" type="button">
+    <button class="page-header__burger page-header__burger--open" type="button">
+      <svg class="page-header__icon" width="23" height="23">
+        <use class="page-header__icon-menu" href="../img/svg/sprite.svg#menu"></use>
+        <use class="page-header__icon-cross" href="../img/svg/sprite.svg#cross"></use>
+      </svg>
       <span class="visually-hidden">
         Открыть меню
       </span>
@@ -25,7 +29,7 @@
 
     <!-- main navigation -->
     <nav class="main-nav">
-      <ul class="main-nav__list">
+      <ul class="main-nav__list main-nav__list--open">
         <li class="main-nav__item main-nav__item--active">
           <a href="index.html">
             Главная
@@ -50,7 +54,7 @@
     </nav>
 
     <div class="welcome">
-      <img class="welcome__slogan" src="" width="" height="" alt="Welcome to Sedona!">
+      <img class="welcome__slogan" src="img/svg/welcome-text.svg" width="320" height="389" alt="Welcome to Sedona!">
     </div>
   </header>
 
@@ -71,18 +75,18 @@
 
       <!-- reasons -->
       <ol class="reasons__list">
-        <li class="reasons__item reasons-item">
+        <li class="reasons__item reasons-item__blue-wrapper reasons-item">
           <!-- 1 -->
           <div class="reasons-item__text-holder">
             <h3 class="reasons-item__title">
               Настоящий городок
             </h3>
             <p class="reasons-item__text">
-              Седона — не аттракцион для туристов, там течёт своя жизнь
+              Седона не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
           <div class="reasons-item__image-holder">
-            <img class="reasons-item__img" src="" width="520px" height="260px" alt="Вид на город Седона.">
+            <img class="reasons-item__img" src="img/index-mobile/photo-city@1x.jpg" width="520px" height="260px" alt="Вид на город Седона.">
           </div>
           <!-- features -->
           <ul class="features">
@@ -93,7 +97,7 @@
                 Жильё
               </h3>
               <p class="features-item__text">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                Рекомендуем пожить в настоящем мотеле, все как в кино!
               </p>
             </li>
 
@@ -103,7 +107,7 @@
                 Сувениры
               </h3>
               <p class="features-item__text">
-                Не только китайского, но и настоящего местного производства!
+                Не только китайского, но и местного производства!
               </p>
             </li>
 
@@ -121,34 +125,34 @@
         </li>
 
         <!-- 2 -->
-        <li class="reasons__item reasons-item">
+        <li class="reasons__item reasons-item__blue-wrapper reasons-item">
           <div class="reasons-item__text-holder">
             <h3 class="reasons-item__title">
               Там есть мост дьявола
             </h3>
             <p class="reasons-item__text">
-              Да, по нему можно пройти! Если вы осмелитесь, разумеется
+              Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
           <div class="reasons-item__image-holder">
-            <img class="reasons-item__img" src="" width="520px" height="260px" alt="Вид на мост Дьявола.">
+            <img class="reasons-item__img" src="img/index-mobile/photo-bridge@1x.jpg" width="520px" height="260px" alt="Вид на мост Дьявола.">
           </div>
         </li>
 
         <!-- 3 -->
-        <li class="reasons__item reasons-item">
+        <li class="reasons__item reasons__item--gray-wrapper reasons-item">
           <div class="reasons-item__text-holder">
             <h3 class="reasons-item__title">
               Небольшая площадь
             </h3>
             <p class="reasons-item__text">
-              Все достопримечательности находятся очень близко
+              Все интересные места находятся очень близко
             </p>
           </div>
         </li>
 
         <!-- 4 -->
-        <li class="reasons__item reasons-item">
+        <li class="reasons__item reasons__item--gray-wrapper reasons-item">
           <div class="reasons-item__text-holder">
             <h3 class="reasons-item__title">
               Красивая дорога
@@ -160,7 +164,7 @@
         </li>
 
         <!-- 5 -->
-        <li class="reasons__item reasons-item">
+        <li class="reasons__item reasons__item--gray-wrapper reasons-item">
           <div class="reasons-item__text-holder">
             <h3 class="reasons-item__title">
               Мало туристов
@@ -174,16 +178,18 @@
     </section>
 
     <!-- hotel search -->
-    <section class="intro">
-      <h2 class="intro__title">
-        Заинтересовались?
-      </h2>
-      <p class="intro__subtitle">
-        Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
-      </p>
-      <button class="intro__button button" type="button">
-        Найти гостиницу
-      </button>
+    <section class="hotel-search">
+      <div class="hotel-search__intro intro">
+        <h2 class="intro__title">
+          Заинтересовались?
+        </h2>
+        <p class="intro__subtitle">
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <button class="button hotel-search__button" type="button">
+          Найти гостиницу
+        </button>
+      </div>
     </section>
 
     <!-- map -->
@@ -192,8 +198,7 @@
         Седона на карте
       </h2>
       <div class="map__wrapper">
-        <!-- сюда вставлю карту -->
-        <iframe src="" frameborder="0"></iframe>
+          <img class="map__image" src="img/index-mobile/map-mobile.jpg" width="320" height="350" alt="карта города Седона">
         <span class="visually-hidden">
           Местоположение города Седона на карте.
         </span>
@@ -205,7 +210,7 @@
   <footer class="page-footer">
 
     <!-- хэштег -->
-    <div class="page-footer__item">
+    <div class="page-footer__hashtag">
       #visitSEDONA
     </div>
 

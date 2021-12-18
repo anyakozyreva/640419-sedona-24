@@ -1,0 +1,36 @@
+// welcome
+
+.welcome {
+  display: flex;
+  padding: 86px 0 86px 0;
+  background-color: $dark-blue;
+  background-image: url(../img/svg/intro-triangle.svg), url(../img/index-mobile/welcome-mobile.jpg);
+  background-size: 100%;
+  background-position: 0 bottom, 0 0;
+  background-repeat: no-repeat;
+}
+
+.welcome__slogan {
+  width: 282px;
+  height: 209px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.welcome__inner {
+  display: flex;
+  padding: 70px 0 70px 0;
+  background-image: url(../img/svg/intro-triangle.svg), url(../img/catalog-mobile/welcome-inner-mobile.jpg);
+  background-size: 100%;
+  background-position: 0 bottom, 0 0;
+  background-repeat: no-repeat;
+}
+
+.welcome__slogan-inner {
+  width: 229px;
+  height: 39px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}

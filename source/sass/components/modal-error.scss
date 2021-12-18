@@ -1,0 +1,19 @@
+// modal-error
+
+.modal-error {
+  padding-bottom: 35px;
+}
+
+.modal-error__intro {
+  padding: 0 50px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-text-color;
+}
+
+.modal-error__button {
+  margin: 22px auto;
+  padding: 16px 63px;
+}

@@ -1,0 +1,29 @@
+// button
+
+.button {
+  display: block;
+  text-align: center;
+  border: 0;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: $base-bg-color;
+  background-color: $light-blue;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: $dark-blue;
+  }
+
+  &--disabled {
+    color: $base-bg-color;
+    background-color: $light-grey;
+  }
+}

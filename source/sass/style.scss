@@ -1,1 +1,49 @@
-// Начните писать стили здесь
+// global
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+// components
+// index
+@import "./components/page.scss";
+@import "./components/page-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/welcome.scss";
+@import "./components/page-main.scss";
+
+@import "./components/reasons.scss";
+@import "./components/intro.scss";
+
+@import "./components/reasons-item.scss";
+@import "./components/features.scss";
+@import "./components/features-item.scss";
+@import "./components/hotel-search.scss";
+@import "./components/map.scss";
+// button
+@import "./components/button.scss";
+// catalog
+@import "./components/gallery.scss";
+@import "./components/gallery-item.scss";
+@import "./components/like.scss";
+@import "./components/video.scss";
+@import "./components/control.scss";
+@import "./components/control-bar.scss";
+@import "./components/player.scss";
+// form
+@import "./components/form.scss";
+@import "./components/review-form.scss";
+@import "./components/text-field.scss";
+//radio
+@import "./components/radio-button.scss";
+//checkbox
+@import "./components/checkbox.scss";
+
+// footer
+@import "./components/page-footer.scss";
+@import "./components/social.scss";
+@import "./components/branding.scss";
+
+// modal
+@import "./components/modal-container.scss";
+@import "./components/modal-error.scss";
+@import "./components/modal-success.scss";

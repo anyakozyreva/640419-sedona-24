@@ -1,0 +1,44 @@
+// reasons
+
+.reasons {
+
+}
+
+.reasons__intro {
+  padding: 0 30px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-text-color;
+}
+
+// reasons list
+.reasons__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.reasons__item {
+  text-align: center;
+  counter-reset: my-counter;
+}
+
+
+// counter
+.reasons__item::before {
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-align: center;
+  line-height: 26px;
+  color: $base-text-color;
+  background-color: transparent;
+  counter-increment: my-counter;
+  content: counter(my-counter);
+}

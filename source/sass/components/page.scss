@@ -1,0 +1,13 @@
+// page
+
+.page {
+  height: 100%;
+}
+
+.page__body {
+  min-width: $mobile-width;
+  min-height: 100%;
+  margin: 0;
+  background-color: $base-bg-color;
+  color: $base-text-color;
+}

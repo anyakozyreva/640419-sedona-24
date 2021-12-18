@@ -1,0 +1,56 @@
+// review-form
+
+.review-form {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $mobile-width) {
+  .review-form__fieldset {
+    border: none;
+    outline: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .review-form__fieldset {}
+}
+
+.review-form__title {
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.review-form__wrapper {
+  display: flex;
+}
+
+.review-form__text-field {
+  padding: 0 0 20px 0;
+}
+
+.review-form__input {}
+
+.review-form__button {}
+
+// radio | checkbox | button
+.review-form__radio {
+  padding: 0 0 43px 0;
+}
+
+.review-form__checkbox {
+  padding: 0 0 43px 0;
+}
+
+.review-form__button {
+  width: 100%;
+  margin: 0 auto;
+  padding: 11px 32px 11px 32px;
+}

@@ -1,0 +1,59 @@
+// text-field
+.text-field {
+  color: $base-text-color;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@media (min-width: $mobile-width) {}
+
+.text-field__label {
+  display: inline-block;
+  padding: 10px 12px 0 0;
+}
+
+.text-field__input-holder {}
+
+.text-field__input {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $base-text-color;
+  background-color: $base-bg-color;
+  border: 0;
+  border: none;
+  outline: none;
+  background-color: $lighten-grey;
+}
+
+@media (min-width: $mobile-width) {
+  .text-field__input {}
+}
+
+.text-field__input[placeholder] {
+  padding: 11px 58px 11px 22px;
+  margin: 0;
+  font-family: inherit;
+  font-weight: bold;
+  color: $base-text-color;
+}
+
+.review-form__textarea {
+  border: none;
+  background-color: $lighten-grey;
+}
+
+.review-form__textarea[placeholder] {
+  padding: 13px 22px 29px 22px;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+@media (min-width: $mobile-width) {
+  .review-form__textarea {
+    min-width: 279px;
+    min-height: 160px;
+  }
+}

@@ -1,0 +1,32 @@
+// social
+
+.social__list {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin-right: 5px;
+  list-style-type: none;
+}
+
+.social__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social__link {
+  display: block;
+  width: 47px;
+  height: 48px;
+  background-color: $light-blue;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  &:focus {
+    background-color: $dark-blue;
+  }
+}

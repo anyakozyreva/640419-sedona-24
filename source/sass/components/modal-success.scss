@@ -1,0 +1,26 @@
+// modal-success
+.modal-success {
+  padding-bottom: 20px;
+}
+
+.modal-success__intro {
+  padding: 0 60px;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-text-color;
+}
+
+.modal-success__button {
+  padding: 12px 40px;
+  margin: 20px auto;
+}
+
+.modal-success__text {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $base-text-color;
+}

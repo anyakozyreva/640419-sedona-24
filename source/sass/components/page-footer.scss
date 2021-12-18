@@ -1,0 +1,25 @@
+// page-footer
+
+.page-footer {
+  padding: 20px 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-footer__hashtag {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $base-text-color;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+  }
+}
