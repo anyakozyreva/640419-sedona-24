@@ -1,54 +1,106 @@
 // features - item
-
 .features-item {
+  background-color: transparent;
+  background-repeat: no-repeat;
 
+  @media (min-width: $mobile-width) {
+    background-size: 40px 40px;
+    background-position: 8% 26px;
+
+    &--home {
+      background-image: url(../img/svg/icon-house.svg);
+    }
+
+    &--souvenir {
+      background-image: url(../img/svg/icon-gift.svg);
+    }
+
+    &--eat {
+      background-image: url(../img/svg/icon-burger.svg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-position: 50% 70px;
+
+    &--home {
+      background-size: 75px 72px;
+      background-image: url(../img/svg/icon-house.svg);
+    }
+
+    &--souvenir {
+      background-size: 76px 68px;
+      background-image: url(../img/svg/icon-gift.svg);
+      order: 3;
+    }
+
+    &--eat {
+      background-size: 64px 75px;
+      background-image: url(../img/svg/icon-burger.svg);
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 50% 60px;
+
+    &--home {
+      background-size: 75px 72px;
+      background-image: url(../img/svg/icon-house.svg);
+    }
+
+    &--souvenir {
+      background-size: 76px 68px;
+      background-image: url(../img/svg/icon-gift.svg);
+      order: 3;
+    }
+
+    &--eat {
+      background-size: 64px 75px;
+      background-image: url(../img/svg/icon-burger.svg);
+    }
+  }
 }
 
 .features-item__title {
   margin: 0;
-  padding: 0 0 30px 0;
-  font-size: 21px;
+  padding-right: 5px;
+  padding-left: 5px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
-}
+  color: $base-text-color;
 
-
-.features-item__text {
-  margin: 0;
-  padding: 0 0 30px 0;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-}
-
-
-@media (min-width: $mobile-width) {
-  .features-item {
-    &--home {
-      display: block;
-      background-color: $base-bg-color;
-      background-image: url(../img/svg/icon-house.svg);
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-      background-position: 8% 15px;
-    }
-
-    &--souvenir {
-      background-color: $base-bg-color;
-      background-image: url(../img/svg/icon-gift.svg);
-      background-size: 40px 40px;
-      background-repeat: no-repeat;
-      background-position: 8% 15px;
-    }
-
-    &--eat {
-      background-color: $base-bg-color;
-      background-image: url(../img/svg/icon-burger.svg);
-      background-size: 45px 40px;
-      background-repeat: no-repeat;
-      background-position: 6% 15px;
-    }
+  @media (min-width: $mobile-width) {
+    padding: 0 0 30px 0;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 80px 0 35px 0;
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 0 30px 0;
+    font-size: 21px;
+  }
+}
+
+.features-item__text {
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-transform: uppercase;
+  color: $sub-text-color;
+
+  @media (min-width: $tablet-width) {
+    min-width: 200px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 282px;
+    text-align: center;
+  }
 }

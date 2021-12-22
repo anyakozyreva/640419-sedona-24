@@ -38,8 +38,6 @@
 
 .review-form__input {}
 
-.review-form__button {}
-
 // radio | checkbox | button
 .review-form__radio {
   padding: 0 0 43px 0;
@@ -50,7 +48,18 @@
 }
 
 .review-form__button {
-  width: 100%;
   margin: 0 auto;
-  padding: 11px 32px 11px 32px;
+
+  @media (min-width: $mobile-width) {
+    padding: 11px 32px;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    padding: 15px 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 132px;
+  }
 }

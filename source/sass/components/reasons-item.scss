@@ -1,54 +1,46 @@
 // reasons-item
-
 .reasons-item {
-  width: 100%;
-}
+  display: flex;
 
-.reasons-item__blue-wrapper {
-  background-color: $light-blue;
-
-  .reasons-item__title {
-    padding: 40px 0 0 0;
-  }
-}
-
-// wrapper
-
-@media (min-width: $mobile-width) {
-  .reasons__item--gray-wrapper {
-    width: 100%;
-    margin: 0 20px;
-    background-color: $bold-grey;
-    border-bottom: 1px solid $basic-light-grey;
+  &--image {
+    flex-wrap: wrap;
   }
 
-  .reasons__item--gray-wrapper:last-child {
-    border-bottom: none;
+  &--image-reverse {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
   }
 }
-
-.reasons-item__text-holder {}
 
 .reasons-item__title {
-  margin: 0;
-  font-size: 21px;
-  line-height: 10px;
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: bold;
   text-transform: uppercase;
-  color: $base-text-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
 }
 
 
 .reasons-item__text {
-  margin: 0;
-  font-size: 14px;
-  line-height: 21px;
-  text-align: center;
+  font-size: 12px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: normal;
   text-transform: uppercase;
-  color: $sub-text-color;
-}
 
-.reasons-item__image-holder {}
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
 
-.reasons-item__img {
-  width: 100%;
+  @media (min-width: $desktop-width) {
+    font-size: 14px;
+  }
 }

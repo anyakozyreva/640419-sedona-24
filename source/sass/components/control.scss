@@ -1,13 +1,4 @@
 // control
-.control {
-  background-color: $lighten-grey;
-}
-
-@media (min-width: $mobile-width) {
-  .control {
-    display: grid;
-  }
-}
 
 .control__button {
   width: 40px;

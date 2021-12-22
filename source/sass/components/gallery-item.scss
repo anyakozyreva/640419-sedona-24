@@ -1,4 +1,5 @@
 // gallery-item
+
 @media (min-width: $mobile-width) {
   .gallery-item {
     border-top: 1px solid $light-grey;
@@ -11,10 +12,8 @@
 
 .gallery-item__image-link {
   display: block;
-}
 
-@media (min-width: $mobile-width) {
-  .gallery-item__image-link {
+  @media (min-width: $mobile-width) {
     padding: 23px 11px 0 11px;
   }
 }
@@ -24,11 +23,9 @@
 }
 
 .gallery-item__main {
-  padding: 11px 11px 15px 11px;
-  display: grid;
-  grid-template-rows: min-content;
-  grid-template-columns: 1fr;
-  row-gap: 10px;
+  @media (min-width: $mobile-width) {
+    padding: 20px;
+  }
 }
 
 .gallery-item__title {

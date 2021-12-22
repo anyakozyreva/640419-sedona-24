@@ -1,44 +1,153 @@
 // reasons
-
-.reasons {
-
-}
+.reasons {}
 
 .reasons__intro {
-  padding: 0 30px;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $base-text-color;
+  margin: 0 auto;
+
+  @media (min-width: $mobile-width) {
+    width: 89%;
+    margin-top: 30px;
+
+    h2 {
+      margin-bottom: 30px;
+      padding: 0 5px;
+      font-size: 21px;
+    }
+
+    p {
+      margin-bottom: 45px;
+      padding: 0 5px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 750px;
+    margin-top: 44px;
+
+    h2 {
+      font-size: 26px;
+      padding: 0 80px;
+      margin-bottom: 43px;
+    }
+
+    p {
+      padding: 0 20px;
+      margin-bottom: 61px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 750px;
+    margin-top: 55px;
+
+    h2 {
+      font-size: 26px;
+      padding: 0 100px;
+      margin-bottom: 41px;
+    }
+
+    p {
+      padding: 0 20px;
+      margin-bottom: 61px;
+    }
+  }
 }
 
 // reasons list
 .reasons__list {
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   list-style-type: none;
+  text-align: center;
 }
 
-.reasons__item {
-  text-align: center;
-  counter-reset: my-counter;
+// reasons item
+.reasons-item__text-holder {
+  @media (min-width: $mobile-width) {
+    &--blue {
+      text-align: center;
+      background-color: $blue;
+
+      h3 {
+        padding: 0 30px;
+        font-size: 21px;
+        color: $base-bg-color;
+      }
+
+      p {
+        padding: 0 10px;
+        color: $base-bg-color;
+      }
+    }
+
+    &--grey {
+      background-color: $bold-grey;
+      text-align: center;
+      border-bottom: 1px solid $basic-light-grey;
+
+      h3 {
+        padding: 0 50px;
+        font-size: 21px;
+        color: $sub-text-color;
+      }
+
+      p {
+        padding: 0 50px;
+        color: $base-text-color;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &--blue {
+      flex-grow: 1;
+      width: 256px;
+      min-width: 256px;
+      max-width: calc(100% / 2);
+
+      h3{
+        padding: 44px 63px 10px 63px;
+      }
+    }
+
+    &--grey {
+      width: 256px;
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      &--blue {
+        flex-grow: 1;
+        width: 400px;
+        min-width: 400px;
+        max-width: calc(100% / 2);
+      }
+
+      &--grey {
+        min-width: 400px;
+        max-width: calc(100% / 4);
+        border-bottom: none;
+      }
+    }
+  }
 }
 
+.reasons-item__image-holder {
+  @media (min-width: $tablet-width) {
 
-// counter
-.reasons__item::before {
-  width: 40px;
-  height: 40px;
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-  text-align: center;
-  line-height: 26px;
-  color: $base-text-color;
-  background-color: transparent;
-  counter-increment: my-counter;
-  content: counter(my-counter);
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.reasons-item__img {
+  width: 100%;
+  display: block;
+  object-fit: contain;
 }

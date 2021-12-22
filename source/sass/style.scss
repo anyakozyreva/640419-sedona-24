@@ -10,17 +10,18 @@
 @import "./components/main-nav.scss";
 @import "./components/welcome.scss";
 @import "./components/page-main.scss";
-
-@import "./components/reasons.scss";
+// intro
 @import "./components/intro.scss";
-
+// index reasons
+@import "./components/reasons.scss";
 @import "./components/reasons-item.scss";
 @import "./components/features.scss";
 @import "./components/features-item.scss";
-@import "./components/hotel-search.scss";
-@import "./components/map.scss";
 // button
 @import "./components/button.scss";
+@import "./components/hotel-search.scss";
+//map
+@import "./components/map.scss";
 // catalog
 @import "./components/gallery.scss";
 @import "./components/gallery-item.scss";
@@ -37,7 +38,6 @@
 @import "./components/radio-button.scss";
 //checkbox
 @import "./components/checkbox.scss";
-
 // footer
 @import "./components/page-footer.scss";
 @import "./components/social.scss";

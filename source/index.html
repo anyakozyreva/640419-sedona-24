@@ -16,20 +16,17 @@
       <img src="img/logo.svg" width="102" height="84" alt="Логотип сайта">
     </a>
 
-    <!-- бургер -->
-    <button class="page-header__burger page-header__burger--open" type="button">
-      <svg class="page-header__icon" width="23" height="23">
-        <use class="page-header__icon-menu" href="../img/svg/sprite.svg#menu"></use>
-        <use class="page-header__icon-cross" href="../img/svg/sprite.svg#cross"></use>
-      </svg>
-      <span class="visually-hidden">
-        Открыть меню
-      </span>
-    </button>
-
     <!-- main navigation -->
-    <nav class="main-nav">
-      <ul class="main-nav__list main-nav__list--open">
+    <nav class="main-nav main-nav--closed">
+
+      <!-- бургер -->
+      <button class="main-nav__burger" type="button">
+        <span class="visually-hidden">
+          Открыть меню
+        </span>
+      </button>
+
+      <ul class="main-nav__list">
         <li class="main-nav__item main-nav__item--active">
           <a href="index.html">
             Главная
@@ -75,9 +72,9 @@
 
       <!-- reasons -->
       <ol class="reasons__list">
-        <li class="reasons__item reasons-item__blue-wrapper reasons-item">
+        <li class="reasons__item reasons-item reasons-item--image">
           <!-- 1 -->
-          <div class="reasons-item__text-holder">
+          <div class="reasons-item__text-holder reasons-item__text-holder--blue">
             <h3 class="reasons-item__title">
               Настоящий городок
             </h3>
@@ -86,7 +83,8 @@
             </p>
           </div>
           <div class="reasons-item__image-holder">
-            <img class="reasons-item__img" src="img/index-mobile/photo-city@1x.jpg" width="520px" height="260px" alt="Вид на город Седона.">
+            <img class="reasons-item__img" src="img/index-mobile/photo-city@1x.jpg" width="520px" height="260px"
+              alt="Вид на город Седона">
           </div>
           <!-- features -->
           <ul class="features">
@@ -117,7 +115,7 @@
                 Еда
               </h3>
               <p class="features-item__text">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                Всегда заказывайте фирменный бургер, вы не разочаруетесь!
               </p>
             </li>
 
@@ -125,8 +123,8 @@
         </li>
 
         <!-- 2 -->
-        <li class="reasons__item reasons-item__blue-wrapper reasons-item">
-          <div class="reasons-item__text-holder">
+        <li class="reasons__item reasons-item reasons-item--image-reverse">
+          <div class="reasons-item__text-holder reasons-item__text-holder--blue">
             <h3 class="reasons-item__title">
               Там есть мост дьявола
             </h3>
@@ -135,13 +133,14 @@
             </p>
           </div>
           <div class="reasons-item__image-holder">
-            <img class="reasons-item__img" src="img/index-mobile/photo-bridge@1x.jpg" width="520px" height="260px" alt="Вид на мост Дьявола.">
+            <img class="reasons-item__img" src="img/index-mobile/photo-bridge@1x.jpg" width="520px" height="260px"
+              alt="Вид на мост Дьявола">
           </div>
         </li>
 
         <!-- 3 -->
-        <li class="reasons__item reasons__item--gray-wrapper reasons-item">
-          <div class="reasons-item__text-holder">
+        <li class="reasons__item reasons-item">
+          <div class="reasons-item__text-holder reasons-item__text-holder--grey">
             <h3 class="reasons-item__title">
               Небольшая площадь
             </h3>
@@ -152,8 +151,8 @@
         </li>
 
         <!-- 4 -->
-        <li class="reasons__item reasons__item--gray-wrapper reasons-item">
-          <div class="reasons-item__text-holder">
+        <li class="reasons__item reasons-item">
+          <div class="reasons-item__text-holder reasons-item__text-holder--grey">
             <h3 class="reasons-item__title">
               Красивая дорога
             </h3>
@@ -164,8 +163,8 @@
         </li>
 
         <!-- 5 -->
-        <li class="reasons__item reasons__item--gray-wrapper reasons-item">
-          <div class="reasons-item__text-holder">
+        <li class="reasons__item reasons-item">
+          <div class="reasons-item__text-holder reasons-item__text-holder--grey">
             <h3 class="reasons-item__title">
               Мало туристов
             </h3>
@@ -186,10 +185,10 @@
         <p class="intro__subtitle">
           Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <button class="button hotel-search__button" type="button">
-          Найти гостиницу
-        </button>
       </div>
+      <button class="button hotel-search__button" type="button">
+        Найти гостиницу
+      </button>
     </section>
 
     <!-- map -->
@@ -198,7 +197,8 @@
         Седона на карте
       </h2>
       <div class="map__wrapper">
-          <img class="map__image" src="img/index-mobile/map-mobile.jpg" width="320" height="350" alt="карта города Седона">
+        <img class="map__image" src="img/index-mobile/map-mobile.jpg" width="320" height="350"
+          alt="карта города Седона">
         <span class="visually-hidden">
           Местоположение города Седона на карте.
         </span>

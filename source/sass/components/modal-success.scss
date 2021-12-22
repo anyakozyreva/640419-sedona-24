@@ -4,23 +4,19 @@
 }
 
 .modal-success__intro {
-  padding: 0 60px;
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $base-text-color;
+  width: 280px;
+  margin-top: 40px;
+
+  h2 {
+    margin-bottom: 38px;
+  }
+
+  p {
+    margin-bottom: 65px;
+  }
 }
 
 .modal-success__button {
   padding: 12px 40px;
   margin: 20px auto;
-}
-
-.modal-success__text {
-  font-size: 18px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
-  color: $base-text-color;
 }
