@@ -1,5 +1,4 @@
 // global
-
 html {
   height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -8,9 +7,11 @@ html {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+/*   object-fit: contain; */
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }

@@ -1,23 +1,26 @@
 // gallery
 .gallery {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 85px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 96px 0 0 0;
+  }
 }
 
 .gallery__intro {
-  width: 290px;
-  margin-top: 32px;
+  padding: 0 20px 20px 20px;
 
   h2,
   p {
-    margin-bottom: 38px;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 550px;
-    margin-top: 65px;
+    padding: 0 155px 60px 155px;
 
     h2 {
       margin-bottom: 40px;
@@ -27,19 +30,82 @@
     p {
       margin-bottom: 80px;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 338px 60px 338px;
+
+      h2 {
+        margin-bottom: 33px;
+      }
+
+      p {
+        margin-bottom: 85px;
+      }
+    }
+  }
+}
+
+.gallery__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 1);
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 550px;
-    margin-top: 102px;
+    margin: 0;
+  }
+}
 
-    h2 {
-      margin-bottom: 33px;
-      font-size: 30px;
-    }
+.gallery__item {
+  position: relative;
+  width: 100%;
+  padding: 22px 0 15px 0;
+  margin: 0;
+  border-top: 1px solid rgba(229, 229, 229, 1);
 
-    p {
-      margin-bottom: 85px;
-    }
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 0;
+    width: 50%;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 33%;
+    width: 33.33%;
+  }
+}
+
+/* .gallery__item::after {
+  position: absolute;
+  top: -22px;
+  width: 320px;
+  border-top: 1px solid rgba(229, 229, 229, 1);
+  content: ' ';
+} */
+
+.gallery__item:first-child {
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.gallery__item:nth-child(2n + 3) .gallery-item__main {
+  @media (min-width: $tablet-width) {
+    background-color: rgba(234, 234, 234, 1);
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

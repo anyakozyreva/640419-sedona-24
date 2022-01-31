@@ -1,46 +1,177 @@
-// reasons-item
+//reasons-item
 .reasons-item {
-  display: flex;
+  counter-increment: counter;
 
-  &--image {
-    flex-wrap: wrap;
+  &:first-child .reasons-item__text-holder--bg-blue {
+    padding: 50px 0 0 0;
+    background-image: url("../img/svg/white-triangle.svg");
+    background-position: center 0 top 0;
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media (min-width: $tablet-width) {
+      width: 33.33%;
+      background-image: none;
+    }
   }
 
-  &--image-reverse {
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+  &--wth-image {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      min-width: 768px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &--wth-image-reverse {
+    @media (min-width: $tablet-width) {
+      width: 100%;
+      min-width: 768px;
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+
+  &--bg-grey {
+    padding: 0 0 0 0;
+    background-color: rgba(238, 238, 238, 1);
+
+    @media (min-width: $tablet-width) {
+      width: 33.33%;
+    }
+  }
+
+  &--border {
+    padding: 0 20px 0 20px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+    }
   }
 }
 
+//reasons-item__title
 .reasons-item__title {
-  font-size: 18px;
-  line-height: 26px;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
   font-style: normal;
   font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
   text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 1);
+
+  //counter
+  &::after {
+    padding-top: 20px;
+    display: block;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    content: "— №"counter(counter) " —";
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 21px;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 21px;
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
   }
 }
 
-
+//reason-item__text
 .reasons-item__text {
-  font-size: 12px;
-  line-height: 26px;
+  padding: 0 0 22px 0;
+  margin: 0;
+  font-family: inherit;
   font-style: normal;
   font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
   text-transform: uppercase;
+  text-align: center;
+  color: rgba(51, 51, 51, 1);
+}
 
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
+// reasons text holder
+.reasons-item__text-holder {
+  &--bg-blue {
+    background-color: rgba(129, 179, 210, 1);
+
+    h3,
+    span,
+    p {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 33.33%;
+      padding: 35px 15px;
+      /*  flex-grow: 2; */
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 25px 73px 10px 73px;
+    }
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 14px;
+  &--bg-grey {
+    p {
+      color: rgba(51, 51, 51, 1);
+    }
+
+    @media (min-width: $tablet-width) {
+      padding: 41px 38px 64px 40px;
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 42px 54px 62px 54px;
+    }
+  }
+
+  &--border {
+    border-bottom: 1px solid rgba(214, 214, 214, 1);
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
+  }
+
+  .br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+}
+
+// reason image
+.reasons-item__image {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  background-color: rgba(129, 179, 210, 1);
+}
+
+// image-holder
+.reasons-item__image-holder {
+  width: 100%;
+  height: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 66.66%;
   }
 }

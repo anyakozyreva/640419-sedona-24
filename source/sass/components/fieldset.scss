@@ -1,0 +1,592 @@
+// fieldset
+.fieldset {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  border: none;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {}
+
+  &--user-fieldset {
+    @media (min-width: $tablet-width) {
+      max-width: 50%;
+      padding-left: 30px;
+      margin-left: auto;
+      /*  padding-left: 1em; */
+      /* width: 303px; */
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 400px;
+      /*  padding-left: 5em; */
+      /*      padding-left: 79px; */
+    }
+  }
+
+  &--contact-fieldset {
+    @media (min-width: $tablet-width) {
+      /*    order: 3; */
+      width: 100%;
+      margin-top: 74px;
+      border-top: 1px solid rgba(219, 219, 219, 1);
+    }
+  }
+
+  &--emotion-fieldset {
+    @media (min-width: $tablet-width) {
+      /*    order: 1; */
+      width: 50%;
+      border-right: 1px solid rgba(219, 219, 219, 1);
+      order: -1;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 400px;
+      /*  padding-right: 5em; */
+    }
+  }
+
+  &--sight-fieldset {
+    width: 100%;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 auto;
+      border-top: 1px solid rgba(219, 219, 219, 1);
+      /*  order: 4; */
+    }
+  }
+
+  &--feedback-fieldset {
+    @media (min-width: $tablet-width) {
+      /*   order: 5; */
+      width: 100%;
+      border-top: 1px solid rgba(219, 219, 219, 1);
+    }
+  }
+}
+
+.fieldset--sight-fieldset ul li:last-child {
+  @media (min-width: $tablet-width) {
+    margin-right: -13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 0;
+  }
+}
+
+//fieldset__title
+.fieldset__title {
+  width: 100%;
+  margin: 0;
+  border-top: 1px solid rgba(229, 229, 229, 1);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+    border: none;
+  }
+
+  &--user-title {
+    padding: 20px 5px 0 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 193px;
+      height: 26px;
+      margin-left: -23px;
+      padding: 0 5px 0 5px;
+    }
+  }
+
+  &--contact-title {
+    padding: 20px 5px 0 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 309px;
+      height: 26px;
+      margin: 0 auto;
+      padding: 0 5px 0 5px;
+    }
+  }
+
+  &--emotion-title {
+    padding: 20px 5px 0 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 303px;
+      height: 26px;
+      /*      margin: 0 auto; */
+      margin-left: 0;
+      padding: 0 5px 0 5px;
+    }
+  }
+
+  &--sight-title {
+    padding: 15px 5px 0 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 308px;
+      height: 53px;
+      margin: 0 auto;
+      padding: 0 5px 0 5px;
+    }
+  }
+
+  &--feedback-title {
+    padding: 20px 5px 0 5px;
+
+    @media (min-width: $tablet-width) {
+      width: 280px;
+      height: 26px;
+      margin: 0 auto;
+      padding: 0 5px 0 5px;
+    }
+  }
+}
+
+// fieldset__list
+.fieldset__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  &--user-list {
+    padding: 19px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 54px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {}
+  }
+
+  &--contact-list {
+    padding: 17px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    @media (min-width: $tablet-width) {
+      padding: 20px 0 0 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 71px 0 0 0;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &--emotion-list {
+    padding: 25px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 60px 0 0 0;
+    }
+  }
+
+  &--sight-list {
+    padding: 25px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 47px 100px 0 100px;
+      /*   margin: 0 auto; */
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 47px 60px 0 60px;
+      /* justify-content: space-between; */
+    }
+  }
+}
+
+// fieldset__item
+.fieldset__item {
+  margin: 0 0 0 0;
+  padding: 0;
+
+  &--user-item {
+    margin: 0 20px 20px 20px;
+    display: flex;
+
+    @media (min-width: $tablet-width) {
+      min-width: 168px;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  &--contact-item {
+    position: relative;
+    margin: 0 20px 20px 20px;
+    text-align: left;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 20px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 400px;
+      width: 400px;
+    }
+  }
+
+  &--emotion-item {
+    position: relative;
+    min-height: 40px;
+    margin: 0 20px 20px 20px;
+
+    @media (min-width: $tablet-width) {
+      /*  margin-bottom: 30px;
+      padding: 0; */
+    }
+  }
+
+  &--sight-item {
+    /*   min-width: 200px; */
+    min-height: 46px;
+    margin: 0 20px 0 20px;
+    display: block;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 20px 0;
+      /* display: inline-block; */
+    }
+  }
+}
+
+// fieldset__label
+.fieldset__label {
+  margin: 0;
+  padding: 0;
+
+  &--user-label {
+    margin-right: 14px;
+    align-items: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+
+    @media (min-width: $tablet-width) {}
+  }
+
+  &--contact-label {
+    margin: 10px 23px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: rgba(51, 51, 51, 1);
+
+    /* @media (min-width: $tablet-width) {
+      text-align: left;
+    } */
+  }
+}
+
+// fieldset__control-label
+.fieldset__control-label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: none;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+
+// fieldset__input
+.fieldset__input {
+  &--user-input {
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+    padding: 15px 0 15px 20px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(242, 242, 242, 1);
+    opacity: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      min-width: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 300px;
+    }
+  }
+
+  &--contact-input {
+    position: relative;
+    width: 100%;
+    min-width: 100px;
+    padding: 15px 0 15px 20px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(242, 242, 242, 1);
+    opacity: 1;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    background-color: rgba(229, 229, 229, 1);
+  }
+
+  &:focus,
+  &:active {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: inset 0 0 0 4px rgba(229, 229, 229, 1);
+  }
+}
+
+.fieldset__input::placeholder {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 1);
+  opacity: 100%;
+}
+
+// меняю цвет рамки при активном placeholder-e
+.fieldset__input:not(:placeholder-shown) {
+  background-color: rgba(255, 255, 255, 1);
+  outline: 2px solid rgba(255, 255, 255, 1);
+}
+
+// fieldset__icon
+.fieldset__icon {
+  position: absolute;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  display: block;
+  background-color: rgba(230, 230, 230, 1);
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--phone {
+    /*  top: 31px; */
+    background-size: 18px 18px;
+    background-image: url(../img/svg/icon-phone.svg);
+
+    @media (min-width: $desktop-width) {
+      /* left: 426px; */
+    }
+  }
+
+  &--email {
+    /*  top: 119px; */
+    background-size: 16px 12px;
+    background-image: url(../img/svg/icon-email.svg);
+  }
+}
+
+//fieldset__comment-wrapper
+.fieldset__comment-wrapper {
+  padding: 15px 0 0 0;
+  margin: 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 54px 0 0 0;
+    margin: 0;
+  }
+}
+
+// fieldset__textarea
+.fieldset__textarea {
+  height: 160px;
+  width: 100%;
+  margin: 0;
+  padding: 18px 21px 24px 21px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  border: 0;
+  /*   outline: 0; */
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.fieldset__textarea::placeholder {
+  color: rgba(0, 0, 0, 1);
+  opacity: 100%;
+}
+
+// fieldset__control
+.fieldset__control {
+  position: relative;
+  display: block;
+
+  &--radio-control {
+    padding: 0 0 0 78px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 0 0 75px;
+    }
+  }
+
+  &--checkbox-control {
+    @media (min-width: $tablet-width) {
+      /*   padding: 0 0 0 0; */
+    }
+  }
+}
+
+// fieldset__control-mark
+.fieldset__control-mark--radio-mark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 53px;
+  height: 53px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 50%;
+  outline: 5px solid rgba(242, 242, 242, 1);
+  outline-offset: -5px;
+}
+
+
+// radio кнопки
+
+//fieldset__control--radio-control
+.fieldset__control-input--radio-input:checked+.fieldset__control-mark--radio-mark::before,
+.fieldset__control-input--radio-input:checked+.fieldset__control-mark--radio-mark::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: rgba(51, 51, 51, 1);
+  content: ' ';
+  transition: 0.2s;
+}
+
+// состояние радиокнопок
+// hover
+.fieldset__control-input--radio-input:hover+.fieldset__control-mark--radio-mark {
+  background-color: rgba(229, 229, 229, 1);
+  outline: 5px solid rgba(229, 229, 229, 1);
+  /*  outline-offset: -5px; */
+}
+
+//focus
+.fieldset__control-input--radio-input:focus+.fieldset__control-mark--radio-mark {
+  background-color: rgba(213, 213, 213, 1);
+  outline: 5px solid rgba(213, 213, 213, 1);
+  /*  outline-offset: -5px; */
+}
+
+//active
+.fieldset__control-input--radio-input:active+.fieldset__control-mark--radio-mark {
+  background-color: rgba(229, 229, 229, 1);
+  outline: 5px solid rgba(229, 229, 229, 1);
+  /*  outline-offset: -5px; */
+}
+
+//disabled
+.fieldset__control-input--radio-input:disabled+.fieldset__control-mark--radio-mark {
+  background-color: rgba(213, 213, 213, 1);
+  opacity: 0.3;
+}
+
+
+// checkbox
+
+// fieldset__control-mark--checkbox-mark
+.fieldset__control-mark--checkbox-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 53px;
+  height: 53px;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 5px;
+  outline: 5px solid rgba(242, 242, 242, 1);
+  outline-offset: -5px;
+}
+
+//fieldset__control--checkbox-control
+.fieldset__control--checkbox-control {
+  padding: 23px 0 23px 70px;
+}
+
+.fieldset__control-input--checkbox-input:checked+.fieldset__control-mark--checkbox-mark::before,
+.fieldset__control-input--checkbox-input:checked+.fieldset__control-mark--checkbox-mark::after {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 24px;
+  height: 17px;
+  background-image: url(../img/svg/tick.svg);
+  background-size: 24px 17px;
+  background-position: center;
+  background-repeat: no-repeat;
+  content: ' ';
+  transition: 0.2s;
+}
+
+// состояние checkbox
+// hover
+.fieldset__control-input--checkbox-input:hover+.fieldset__control-mark--checkbox-mark {
+  background-color: rgba(229, 229, 229, 1);
+  outline: 5px solid rgba(229, 229, 229, 1);
+  /*  outline-offset: -5px; */
+}
+
+//focus
+.fieldset__control-input--checkbox-input:focus+.fieldset__control-mark--checkbox-mark {
+  background-color: rgba(213, 213, 213, 1);
+  outline: 5px solid rgba(213, 213, 213, 1);
+  /*  outline-offset: -5px; */
+}
+
+//active
+.fieldset__control-input--checkbox-input:active+.fieldset__control-mark--checkbox-mark {
+  background-color: rgba(229, 229, 229, 1);
+  outline: 5px solid rgba(229, 229, 229, 1);
+  /*  outline-offset: -5px; */
+}
+
+//disabled
+.fieldset__control-input--checkbox-input:disabled+.fieldset__control-mark--checkbox-mark {
+  background-color: rgba(213, 213, 213, 1);
+  opacity: 0.3;
+}

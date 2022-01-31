@@ -1,30 +1,98 @@
 // control
+.control {
+  position: relative;
+  min-height: 66px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 20px;
+  padding: 0 20px 0 20px;
+  background-color: rgba(242, 242, 242, 1);
 
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    min-height: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 35px 0 45px;
+    bottom: 27px;
+    /*    background-color: rgba(0, 0, 0, 0.6); */
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 33px 0 33px;
+  }
+}
+
+// control button
 .control__button {
-  width: 40px;
+  position: relative;
+  /*   width: 40px; */
   height: 40px;
   display: flex;
-  justify-items: center;
+  justify-content: space-between;
   align-items: center;
   border: none;
+  outline: none;
+  text-align: center;
   background-color: transparent;
   cursor: pointer;
 
-  &--replay {
-    background-image: url(/img/svg/replay.svg);
-    background-size: 16px 20px;
-    background-repeat: no-repeat;
+  &--reply {
+    width: 16px;
+    order: 1;
   }
 
   &--subtitles {
-    background-image: url(/img/svg/subtitles.svg);
-    background-size: 32px 20px;
-    background-repeat: no-repeat;
+    width: 32px;
+    margin-right: 31px;
+    margin-left: auto;
+    order: 3;
+
+/*     @media (min-width: $tablet-width) {
+    }
+
+    @media (min-width: $desktop-width) {
+      right: auto;
+    } */
   }
 
   &--fullscreen {
-    background-image: url(/img/svg/fullscreen.svg);
-    background-size: 20px 20px;
-    background-repeat: no-repeat;
+    width: 32px;
+    top: 5px;
+    order: 4;
+    /* text-align: center; */
+  }
+}
+
+// control icon
+.control__icon {
+  position: absolute;
+  z-index: 2;
+  fill: rgba(92, 104, 112, 1);
+
+  &:hover {
+    fill: rgba(51, 51, 51, 1);
+  }
+
+  &:focus {
+    fill: rgba(51, 51, 51, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: rgba(255, 255, 255, 1);
+
+    &:hover {
+      fill: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      fill: gba(255, 255, 255, 0.3);
+    }
   }
 }

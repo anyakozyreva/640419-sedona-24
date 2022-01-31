@@ -3,5 +3,10 @@
 .like {
   width: 23px;
   height: 21px;
+  padding: 0;
   content: url(/img/svg/like-icon.svg);
+
+  @media (min-width: $desktop-width) {
+    content: url(/img/svg/like-icon-desktop.svg);
+  }
 }

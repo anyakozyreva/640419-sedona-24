@@ -1,6 +1,6 @@
 // text-field
 .text-field {
-  color: $base-text-color;
+  color: rgba(0, 0, 0, 1);
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -20,12 +20,10 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: $base-text-color;
-  background-color: $base-bg-color;
-  border: 0;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 1);
   border: none;
   outline: none;
-  background-color: $lighten-grey;
 }
 
 @media (min-width: $mobile-width) {
@@ -37,12 +35,12 @@
   margin: 0;
   font-family: inherit;
   font-weight: bold;
-  color: $base-text-color;
+  color: rgba(0, 0, 0, 1);
 }
 
 .review-form__textarea {
   border: none;
-  background-color: $lighten-grey;
+  background-color: rgba(242, 242, 242, 1);
 }
 
 .review-form__textarea[placeholder] {

@@ -1,22 +1,55 @@
-// modal-error
-
+//  modal-error
 .modal-error {
+  @media (min-width: $tablet-width) {
+    width: 400px;
+  }
 }
 
+// modal-error__intro
 .modal-error__intro {
-  width: 300px;
-  margin-top: 40px;
+  padding: 0 0 0 0;
 
   h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 35px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 40px;
+    }
   }
 
   p {
     margin-bottom: 20px;
   }
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }
 
+//modal-error__wrapper
+.modal-error__wrapper {
+  padding: 40px 42px 35px 42px;
+
+  @media (min-width: $tablet-width) {
+    padding: 52px 47px 49px 47px;
+  }
+}
+
+// modal-success__button
 .modal-error__button {
-  margin: 22px auto;
-  padding: 16px 63px;
+  min-width: 180px;
+  padding: 16px 10px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    min-width: 272px;
+  }
 }

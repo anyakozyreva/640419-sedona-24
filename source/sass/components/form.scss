@@ -1,63 +1,50 @@
 // form
 .form {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (min-width: $mobile-width) {
-    margin-top: 36px;
-    margin-bottom: 16px;
-  }
+  padding: 35px 0 0 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 64px;
-    margin-bottom: 58px;
+    padding: 65px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 114px;
-    margin-bottom: 56px;
+    padding: 114px 0 0 0;
   }
 }
 
 .form__intro {
-  @media (min-width: $mobile-width) {
-    width: 97%;
-    margin-top: 28px;
+  padding: 0 20px 20px 20px;
 
-    h2 {
-      margin-bottom: 28px;
-    }
-
-    p {
-      margin-bottom: 30px;
-    }
+  h2 {
+    margin-bottom: 40px;
   }
 
   @media (min-width: $tablet-width) {
-    width: 560px;
+    margin: 0 0 60px 0;
+    padding: 0 166px 0 166px;
 
     h2 {
-      margin-bottom: 40px;
+      margin-bottom: 37px;
       font-size: 30px;
     }
 
     p {
-      margin-bottom: 90px;
+      margin-bottom: 0;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 560px;
+    margin: 0 0 67px 0;
+    padding: 0 339px 0 339px;
 
     h2 {
-      margin-bottom: 33px;
-      font-size: 30px;
+      margin-bottom: 30px;
     }
 
     p {
-      margin-bottom: 67px;
+      margin-bottom: 0;
     }
   }
 }

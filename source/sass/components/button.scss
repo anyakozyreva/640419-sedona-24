@@ -1,29 +1,31 @@
 // button
-
 .button {
   display: block;
   text-align: center;
-  border: 0;
+  border: none;
   font-family: inherit;
   font-style: normal;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  color: $base-bg-color;
-  background-color: $light-blue;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(129, 179, 210, 1);
   text-transform: uppercase;
+  cursor: pointer;
 
   &:hover {
-    background-color: $blue;
+    background-color: rgba(102, 158, 192, 1);
   }
 
   &:focus {
     color: rgba(255, 255, 255, 0.3);
-    background-color: $dark-blue;
+    background-color: rgba(84, 150, 189, 1);
   }
 
-  &--disabled {
-    color: $base-bg-color;
-    background-color: $light-grey;
+  &--disabled,
+  &--disabled:hover,
+  &--disabled:active {
+    color: rgba(229, 229, 229, 1);
+    background-color: rgba(229, 229, 229, 1);
   }
 }

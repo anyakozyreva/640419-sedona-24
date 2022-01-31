@@ -11,47 +11,56 @@
 <body class="page__body">
   <header class="page-header">
 
-    <!-- logo -->
-    <a class="page-header__logo-link" href="#">
-      <img src="img/logo.svg" width="102" height="84" alt="Логотип сайта">
-    </a>
-
-    <!-- main navigation -->
-    <nav class="main-nav main-nav--closed">
+    <!-- main-nav -->
+    <nav class="main-nav main-nav--opened main-nav--nojs">
 
       <!-- бургер -->
-      <button class="main-nav__burger" type="button">
+      <button class="main-nav__toggle" type="button" aria-expanded="false"
+        aria-control="main-nav__list">
         <span class="visually-hidden">
           Открыть меню
         </span>
       </button>
 
-      <ul class="main-nav__list">
-        <li class="main-nav__item main-nav__item--active">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="catalog.html">
-            Фото и видео
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="form.html">
-            Форма отзыва
-          </a>
-        </li>
-        <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/">
-            Htmlacademy
-          </a>
-        </li>
-      </ul>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">
+              Фото и видео
+            </a>
+          </li>
+
+          <li class="main-nav__item main-nav__item--flex-grow"></li>
+
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="https://htmlacademy.ru/">
+              Htmlacademy
+            </a>
+          </li>
+        </ul>
+
     </nav>
 
-    <div class="welcome">
-      <img class="welcome__slogan" src="img/svg/welcome-text.svg" width="320" height="389" alt="Welcome to Sedona!">
+     <!-- logo -->
+     <a class="page-header__logo-link" href="#">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип сайта">
+      </picture>
+    </a>
+
+    <div class="page-header__image-container page-header__image-container--index">
+      <img class="page-header__image--index" src="img/svg/welcome-text.svg" width="320" height="389" alt="Welcome to Sedona!">
     </div>
   </header>
 
@@ -62,7 +71,7 @@
 
     <section class="reasons">
       <div class="reasons__intro intro">
-        <h2 class="intro__title intro__title--large">
+        <h2 class="intro__title intro__title--medium">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
         </h2>
         <p class="intro__text">
@@ -72,19 +81,25 @@
 
       <!-- reasons -->
       <ol class="reasons__list">
-        <li class="reasons__item reasons-item reasons-item--image">
+        <li class="reasons__item reasons-item reasons-item--wth-image">
           <!-- 1 -->
-          <div class="reasons-item__text-holder reasons-item__text-holder--blue">
+          <div class="reasons-item__text-holder reasons-item__text-holder--bg-blue">
             <h3 class="reasons-item__title">
-              Настоящий городок
+              Настоящий </br>городок
             </h3>
-            <p class="reasons-item__text">
+            <p class="reasons-item__text reasons-item__text--text-white">
               Седона не аттракцион для туристов, там течёт своя жизнь
             </p>
           </div>
           <div class="reasons-item__image-holder">
-            <img class="reasons-item__img" src="img/index-mobile/photo-city@1x.jpg" width="520px" height="260px"
-              alt="Вид на город Седона">
+            <picture>
+              <source media="(min-width: 1200px)"
+                srcset="img/index-desktop/photo-city@1x.jpg 1x, img/index-desktop/photo-city@2x.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/index-tablet/photo-city@1x.jpg 1x, img/index-tablet/photo-city@2x.jpg 2x">
+              <img class="reasons-item__image" src="img/index-mobile/photo-city@1x.jpg"
+                srcset="img/index-mobile/photo-city@2x.jpg 2x" alt="Вид на город Седона">
+            </picture>
           </div>
           <!-- features -->
           <ul class="features">
@@ -123,27 +138,35 @@
         </li>
 
         <!-- 2 -->
-        <li class="reasons__item reasons-item reasons-item--image-reverse">
-          <div class="reasons-item__text-holder reasons-item__text-holder--blue">
+        <li class="reasons__item reasons-item reasons-item--wth-image-reverse">
+          <div class="reasons-item__text-holder reasons-item__text-holder--bg-blue">
             <h3 class="reasons-item__title">
               Там есть мост дьявола
             </h3>
+
             <p class="reasons-item__text">
               Да, по нему можно пройти! Если вы осмелитесь, конечно
             </p>
           </div>
           <div class="reasons-item__image-holder">
-            <img class="reasons-item__img" src="img/index-mobile/photo-bridge@1x.jpg" width="520px" height="260px"
-              alt="Вид на мост Дьявола">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/index-desktop/photo-bridge@1x.jpg 1x,
+                img/index-desktop/photo-bridge@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/index-tablet/photo-bridge@1x.jpg 1x,
+                img/index-tablet/photo-bridge@2x.jpg 2x">
+              <img class="reasons-item__image" src="img/index-mobile/photo-bridge@1x.jpg"
+                srcset="img/index-mobile/photo-bridge@2x.jpg 2x" alt="Вид на мост Дьявола">
+            </picture>
           </div>
         </li>
 
         <!-- 3 -->
-        <li class="reasons__item reasons-item">
-          <div class="reasons-item__text-holder reasons-item__text-holder--grey">
+        <li class="reasons__item reasons-item reasons-item--border reasons-item--bg-grey">
+          <div class="reasons-item__text-holder reasons-item__text-holder--border reasons-item__text-holder--bg-grey">
             <h3 class="reasons-item__title">
               Небольшая площадь
             </h3>
+
             <p class="reasons-item__text">
               Все интересные места находятся очень близко
             </p>
@@ -151,23 +174,25 @@
         </li>
 
         <!-- 4 -->
-        <li class="reasons__item reasons-item">
-          <div class="reasons-item__text-holder reasons-item__text-holder--grey">
+        <li class="reasons__item reasons-item reasons-item--border reasons-item--bg-grey">
+          <div class="reasons-item__text-holder reasons-item__text-holder--border reasons-item__text-holder--bg-grey">
             <h3 class="reasons-item__title">
               Красивая дорога
             </h3>
+
             <p class="reasons-item__text">
-              Ехать в Седону из Лас-Вегаса совсем не скучно!
+              Ехать в Седону из Лас-Вегаса совсем </br>не скучно!
             </p>
           </div>
         </li>
 
         <!-- 5 -->
-        <li class="reasons__item reasons-item">
-          <div class="reasons-item__text-holder reasons-item__text-holder--grey">
+        <li class="reasons__item reasons-item reasons-item--bg-grey">
+          <div class="reasons-item__text-holder reasons-item__text-holder--bg-grey">
             <h3 class="reasons-item__title">
               Мало туристов
             </h3>
+
             <p class="reasons-item__text">
               Большинство едет в Гранд Каньон и толпится там
             </p>
@@ -179,11 +204,11 @@
     <!-- hotel search -->
     <section class="hotel-search">
       <div class="hotel-search__intro intro">
-        <h2 class="intro__title">
+        <h2 class="intro__title intro__title--large">
           Заинтересовались?
         </h2>
         <p class="intro__subtitle">
-          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,</br>и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
       </div>
       <button class="button hotel-search__button" type="button">
@@ -197,8 +222,10 @@
         Седона на карте
       </h2>
       <div class="map__wrapper">
-        <img class="map__image" src="img/index-mobile/map-mobile.jpg" width="320" height="350"
-          alt="карта города Седона">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.135657476916!2d-111.83015810420495!3d34.85444381570011!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2str!4v1641755211049!5m2!1sru!2str"
+          allowfullscreen="" loading="lazy">
+        </iframe>
         <span class="visually-hidden">
           Местоположение города Седона на карте.
         </span>
@@ -217,38 +244,51 @@
     <!-- социальные сети -->
     <div class="social">
       <ul class="social__list">
+
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">
               Twitter
             </span>
           </a>
         </li>
+
         <li class="social__item">
-          <a class="social__link" href="https://facebook.com/htmlacademy">
+          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
             <span class="visually-hidden">
               Facebook
             </span>
           </a>
         </li>
+
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/HTMLAcademyRUS">
             <span class="visually-hidden">
               Youtube
             </span>
           </a>
         </li>
+
       </ul>
     </div>
 
     <!-- HTMLacademy -->
-    <a class="branding" href="https://htmlacademy.ru/intensive/adaptive">
+    <div class="branding">
       Разработано
-      <span class="visually-hidden">
-        HTML Academy
-      </span>
-    </a>
+      <a class="branding__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">
+          HTML Academy
+        </span>
+        <svg class="branding__icon" viewBox="0 0 27 35" width="27" height="35">
+          <use href="img/svg/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
+
+  <!-- script -->
+  <script src="js/script.js"></script>
+
 </body>
 
 </html>

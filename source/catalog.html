@@ -11,50 +11,60 @@
 <body class="page__body">
   <header class="page-header">
 
-    <!-- logo -->
-    <a class="page-header__logo-link" href="index.html">
-      <img src="img/logo.svg" width="102" height="84" alt="Логотип сайта">
-    </a>
-
-    <!-- main navigation -->
-    <nav class="main-nav">
+    <!-- открыть меню main-nav--opened // закрыть main-nav--closed -->
+    <nav class="main-nav main-nav--opened main-nav--nojs">
 
       <!-- бургер -->
-      <button class="page-header__burger page-header__burger--open" type="button">
+      <button class="main-nav__toggle" type="button" aria-expanded="false" aria-control="main-nav__list">
         <span class="visually-hidden">
           Открыть меню
         </span>
       </button>
 
       <ul class="main-nav__list">
-        <li class="main-nav__item">
-          <a href="index.html">
+        <li class="main-nav__item main-nav__item--active">
+          <a class="main-nav__link" href="index.html">
             Главная
           </a>
         </li>
-        <li class="main-nav__item main-nav__item--active">
-          <a href="catalog.html">
+
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="catalog.html">
             Фото и видео
           </a>
         </li>
+
+        <li class="main-nav__item main-nav__item--flex-grow"></li>
+
         <li class="main-nav__item">
-          <a href="form.html">
+          <a class="main-nav__link" href="form.html">
             Форма отзыва
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="https://htmlacademy.ru/">
+          <a class="main-nav__link" href="https://htmlacademy.ru/">
             Htmlacademy
           </a>
         </li>
       </ul>
+
     </nav>
 
-    <div class="welcome__inner">
-      <img class="welcome__slogan-inner" src="img/svg/welcome-catalog.svg" width="229" height="39"
+    <!-- logo -->
+    <a class="page-header__logo-link" href="#">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+        <img class="page-header__logo-image" src="img/logo.svg" alt="Логотип сайта">
+      </picture>
+    </a>
+
+    <div class="page-header__image-container page-header__image-container--inner">
+      <img class="page-header__image--inner" src="img/svg/welcome-catalog.svg" width="229" height="39"
         alt="Welcome to Sedona!">
     </div>
   </header>
+
 
   <main class="page-main">
     <h1 class="visually-hidden">
@@ -64,7 +74,7 @@
     <!-- gallery -->
     <section class="gallery">
       <div class="gallery__intro intro">
-        <h2 class="intro__title">
+        <h2 class="intro__title intro__title--large">
           Фото и видео
         </h2>
         <p class="intro__text">
@@ -72,110 +82,158 @@
         </p>
       </div>
 
-      <!-- 1 -->
-      <article class="gallery-item">
-        <a class="gallery-item__image-link" href="#">
-          <img class="gallery-item__image" src="img/catalog-mobile/photo-1-mobile.jpg" width="280" height="280"
-            alt="Красивая дорога.">
-        </a>
-
-        <div class="gallery-item__main">
-          <h3 class="gallery-item__title">
-            <a class="gallery-item__title-link">
-              Народные просторы
+      <ul class="gallery__list">
+        <!-- 1 -->
+        <li class="gallery__item">
+          <article class="gallery-item">
+            <a class="" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-desktop/photo-1-desktop@1x.jpg, img/catalog-desktop/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-tablet/photo-1-tablet@1x.jpg, img/catalog-tablet/photo-1-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="img/catalog-mobile/photo-1-mobile@1x.jpg"
+                  srcset="img/catalog-mobile/photo-1-mobile@2x.jpg 2x" alt="Красивая дорога">
+              </picture>
             </a>
-          </h3>
 
-          <div class="gallery-item__autor">
-            Автор фото: Борис
-          </div>
+            <div class="gallery-item__main">
+              <h3 class="gallery-item__title">
+                <a class="gallery-item__title-link">
+                  Народные просторы
+                </a>
+              </h3>
+              <div class="gallery-item__autor">
+                Автор фото: Борис
+              </div>
+              <div class="gallery__like">
+                <div class="like">
+                  <span class="visually-hidden">Большой палец вверх</span>
+                </div>
+                <span class="gallery-item__like-number">
+                  1350
+                </span>
+              </div>
+            </div>
+          </article>
+        </li>
 
-          <div class="gallery-item__like like">
-            <!-- изображение лайка -->
-            1350
-          </div>
-        </div>
-      </article>
-
-      <!-- 2 -->
-      <article class="gallery-item">
-        <a class="gallery-item__image-link" href="#">
-          <img class="gallery-item__image" src="img/catalog-mobile/photo-2-mobile.jpg" width="280" height="280"
-            alt="Цветы на фоне гор">
-        </a>
-
-        <div class="gallery-item__main">
-          <h3 class="gallery-item__title">
-            <a class="gallery-item__title-link">
-              Местная растительность
+        <!-- 2 -->
+        <li class="gallery__item">
+          <article class="gallery-item">
+            <a class="" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-desktop/photo-2-desktop@1x.jpg, img/catalog-desktop/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-tablet/photo-2-tablet@1x.jpg, img/catalog-tablet/photo-2-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="img/catalog-mobile/photo-2-mobile@1x.jpg"
+                  srcset="img/catalog-mobile/photo-2-mobile@2x.jpg 2x" alt="Цветы на фоне гор">
+              </picture>
             </a>
-          </h3>
 
-          <div class="gallery-item__autor">
-            Автор фото: Сергей
-          </div>
+            <div class="gallery-item__main">
+              <h3 class="gallery-item__title">
+                <a class="gallery-item__title-link">
+                  Местная растительность
+                </a>
+              </h3>
 
-          <div class="gallery-item__like like">
-            <!-- изображение лайка -->
-            143
-          </div>
-        </div>
-      </article>
+              <div class="gallery-item__autor">
+                Автор фото: Сергей
+              </div>
 
-      <!-- 3 -->
-      <article class="gallery-item">
-        <a class="gallery-item__image-link" href="#">
-          <img class="gallery-item__image" src="img/catalog-mobile/photo-3-mobile.jpg" width="280" height="280"
-            alt="Дорога в лесу">
-        </a>
+              <div class="gallery__like">
+                <div class="like">
+                  <span class="visually-hidden">Большой палец вверх</span>
+                </div>
+                <span class="gallery-item__like-number">
+                  143
+                </span>
+              </div>
+            </div>
+          </article>
+        </li>
 
-        <div class="gallery-item__main">
-          <h3 class="gallery-item__title">
-            <a class="gallery-item__title-link">
-              Дорога на север
+        <!-- 3 -->
+        <li class="gallery__item">
+          <article class="gallery-item">
+            <a class="" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-desktop/photo-3-desktop@1x.jpg, img/catalog-desktop/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-tablet/photo-3-tablet@1x.jpg, img/catalog-tablet/photo-3-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="img/catalog-mobile/photo-3-mobile@1x.jpg"
+                  srcset="img/catalog-mobile/photo-3-mobile@2x.jpg 2x" alt="Дорога в лесу">
+              </picture>
             </a>
-          </h3>
 
-          <div class="gallery-item__autor">
-            Автор фото: Петр
-          </div>
+            <div class="gallery-item__main">
+              <h3 class="gallery-item__title">
+                <a class="gallery-item__title-link">
+                  Дорога на север
+                </a>
+              </h3>
 
-          <div class="gallery-item__like like">
-            <!-- изображение лайка -->
-            96
-          </div>
-        </div>
-      </article>
+              <div class="gallery-item__autor">
+                Автор фото: Петр
+              </div>
 
-      <!-- 4 -->
-      <article class="gallery-item">
-        <a class="gallery-item__image-link" href="#">
-          <img class="gallery-item__image" src="img/catalog-mobile/photo-4-mobile.jpg" width="280" height="280"
-            alt="Горный массив">
-        </a>
+              <div class="gallery__like">
+                <div class="like">
+                  <span class="visually-hidden">Большой палец вверх</span>
+                </div>
+                <span class="gallery-item__like-number">
+                  96
+                </span>
+              </div>
+            </div>
+          </article>
+        </li>
 
-        <div class="gallery-item__main">
-          <h3 class="gallery-item__title">
-            <a class="gallery-item__title-link">
-              Мост дьявола
+        <!-- 4 -->
+        <li class="gallery__item">
+          <article class="gallery-item">
+            <a class="" href="#">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/catalog-desktop/photo-4-desktop@1x.jpg, img/catalog-desktop/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/catalog-tablet/photo-4-tablet@1x.jpg, img/catalog-tablet/photo-4-tablet@2x.jpg 2x">
+                <img class="gallery-item__image" src="img/catalog-mobile/photo-4-mobile@1x.jpg"
+                  srcset="img/catalog-mobile/photo-4-mobile@2x.jpg 2x" alt="Горный массив">
+              </picture>
             </a>
-          </h3>
 
-          <div class="gallery-item__autor">
-            Автор фото: Антон
-          </div>
+            <div class="gallery-item__main">
+              <h3 class="gallery-item__title">
+                <a class="gallery-item__title-link">
+                  Мост дьявола
+                </a>
+              </h3>
 
-          <div class="gallery-item__like like">
-            <!-- изображение лайка -->
-            <span>254</span>
-          </div>
-        </div>
-      </article>
+              <div class="gallery-item__autor">
+                Автор фото: Антон
+              </div>
+
+              <div class="gallery__like">
+                <div class="like">
+                  <span class="visually-hidden">Большой палец вверх</span>
+                </div>
+                <span class="gallery-item__like-number">
+                  254
+                </span>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
     </section>
 
     <section class="player">
       <div class="player__intro intro">
-        <h2 class="intro__title">
+        <h2 class="intro__title intro__title--large">
           Все еще сомневаетесь?
         </h2>
         <p class="intro__text">
@@ -185,19 +243,17 @@
 
       <!-- видео -->
       <div class="video">
-        <video class="video__item" poster="img/catalog-mobile/video-mobile.jpg" preload="metadata">
-          <source src="" type="video/webm">
-          <source src="" type="video/mp4">
-        </video>
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/catalog-desktop/video-desktop@1x.jpg, img/catalog-desktop/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)"
+            srcset="img/catalog-tablet/video-tablet@2x.jpg, img/catalog-tablet/video-tablet@2x.jpg 2x">
+          <img class="video__image" src="img/catalog-mobile/video-mobile@1x.jpg"
+            srcset="img/catalog-mobile/video-mobile@2x.jpg 2x" alt="video preview">
+        </picture>
 
         <!-- controls -->
         <div class="control">
-          <!-- здесь будет иконка replay -->
-          <button class="control__button control__button--replay" type="button">
-            <span class="visually-hidden">
-              Проиграть заново
-            </span>
-          </button>
 
           <!-- ползунок -->
           <div class="control-bar">
@@ -210,11 +266,24 @@
             </div>
           </div>
 
+          <!-- здесь будет иконка replay -->
+          <button class="control__button control__button--replay" type="button">
+            <span class="visually-hidden">
+              Проиграть заново
+            </span>
+            <svg class="control__icon control__icon--reply" width="16" height="32">
+              <use href="img/svg/sprite.svg#reply"></use>
+            </svg>
+          </button>
+
           <!-- здесь будет иконка subtitles -->
           <button class="control__button control__button--subtitles" type="button">
             <span class="visually-hidden">
               Субтитры
             </span>
+            <svg class="control__icon control__icon--subtitles" width="32" height="20">
+              <use href="img/svg/sprite.svg#subtitles"></use>
+            </svg>
           </button>
 
           <!-- здесь будет иконка fullscreen -->
@@ -222,6 +291,9 @@
             <span class="visually-hidden">
               Полноэкранный режим
             </span>
+            <svg class="control__icon control__icon--fullscreen" width="32" height="32">
+              <use href="img/svg/sprite.svg#fullscreen"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -240,39 +312,50 @@
     <!-- социальные сети -->
     <div class="social">
       <ul class="social__list">
+
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com/htmlacademy_ru">
+          <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">
             <span class="visually-hidden">
               Twitter
             </span>
           </a>
         </li>
+
         <li class="social__item">
-          <a class="social__link" href="https://facebook.com/htmlacademy">
+          <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy">
             <span class="visually-hidden">
               Facebook
             </span>
           </a>
         </li>
+
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/c/HTMLAcademyRUS">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/HTMLAcademyRUS">
             <span class="visually-hidden">
               Youtube
             </span>
           </a>
         </li>
+
       </ul>
     </div>
 
     <!-- HTMLacademy -->
-    <a class="branding" href="https://htmlacademy.ru/intensive/adaptive">
+    <div class="branding">
       Разработано
-      <span class="visually-hidden">
-        HTML Academy
-      </span>
-    </a>
+      <a class="branding__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="visually-hidden">
+          HTML Academy
+        </span>
+        <svg class="branding__icon" viewBox="0 0 27 35" width="27" height="35">
+          <use href="img/svg/sprite.svg#htmlacademy"></use>
+        </svg>
+      </a>
+    </div>
   </footer>
 
+  <!-- script -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -1,35 +1,77 @@
 // welcome
-.welcome {
-  display: flex;
-  padding: 86px 0 86px 0;
-  background-color: $dark-blue;
-  background-image: url(../img/svg/intro-triangle.svg), url(../img/index-mobile/welcome-mobile.jpg);
-  background-size: 100%;
+/* .welcome {
+  position: relative;
+  width: 100%;
+  padding: 90px 0 60px 0;
+  background-color: rgba(104, 162, 202, 1);
+  background-image: url(/img/svg/intro-triangle-mobile.svg), url(/img/index-mobile/welcome-mobile.jpg);
+  background-size: 100% 57px, 100% 389px;
   background-position: 0 bottom, 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 0 90px 0;
+    background-image: url(/img/svg/intro-triangle-mobile.svg), url(/img/index-tablet/welcome-tablet@1x.jpg);
+    background-size: 100% 57px, 100% 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 78px 0 100px 0;
+    background-image: url(/img/svg/intro-triangle-mobile.svg), url(/img/index-desktop/welcome-desktop@1x.jpg);
+    background-size: 100% 57px, 100% 1200px;
+  }
 }
 
 .welcome__slogan {
   width: 282px;
-  height: 209px;
   display: block;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
+  }
 }
 
-.welcome__inner {
-  display: flex;
-  padding: 70px 0 70px 0;
-  background-image: url(../img/svg/intro-triangle.svg), url(../img/catalog-mobile/welcome-inner-mobile.jpg);
-  background-size: 100%;
+// welcome inner
+.welcome-inner {
+  width: 100%;
+  padding: 90px 0 60px 0;
+  background-color: rgba(104, 162, 202, 1);
+  background-image: url(/img/svg/intro-triangle-mobile.svg), url(/img/catalog-mobile/welcome-inner-mobile@1x.jpg);
+  background-size: 100% 57px, 100% 389px;
   background-position: 0 bottom, 0 0;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    padding: 92px 0 117px 0;
+    background-image: url(/img/svg/intro-triangle-mobile.svg), url(/img/catalog-tablet/welcome-inner-tablet@1x.jpg);
+    background-size: 100% 57px, 100% 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 92px 0 120px 0;
+    background-image: url(/img/svg/intro-triangle-mobile.svg), url(/img/catalog-desktop/welcome-inner-desktop@1x.jpg);
+    background-size: 100% 57px, 100% 1200px;
+  }
 }
 
 .welcome__slogan-inner {
   width: 229px;
-  height: 39px;
   display: block;
   margin-right: auto;
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+  }
 }
+ */
