@@ -41,7 +41,7 @@
 
   &--index {
     padding: 90px 0 60px 0;
-    background-image: url(/img/index-mobile/welcome-mobile.jpg);
+    background-image: url("/img/index-mobile/welcome-mobile.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
@@ -53,34 +53,34 @@
       width: 100%;
       min-height: 56px;
       height: auto;
-      background-image: url(/img/svg/intro-triangle-mobile.svg);
+      background-image: url("/img/svg/intro-triangle-mobile.svg");
       background-size: 100% 57px;
       background-repeat: no-repeat;
       background-position: bottom 0;
-      content: ' ';
+      content: " ";
     }
   }
 
   @media (min-width: $tablet-width) {
     &--index {
       padding: 50px 0 90px 0;
-      background-image: url(/img/index-tablet/welcome-tablet@1x.jpg);
+      background-image: url("/img/index-tablet/welcome-tablet@1x.jpg");
 
       &::after {
-        background-image: url(/img/svg/intro-triangle-mobile.svg);
+        background-image: url("/img/svg/intro-triangle-mobile.svg");
       }
     }
   }
 
   @media (min-width: $desktop-width) {
     padding: 78px 0 100px 0;
-    background-image: url(/img/index-desktop/welcome-desktop@1x.jpg);
+    background-image: url("/img/index-desktop/welcome-desktop@1x.jpg");
     background-size: 1200px auto;
   }
 
   &--inner {
     padding: 90px 0 60px 0;
-    background-image: url(/img/catalog-mobile/welcome-inner-mobile@1x.jpg);
+    background-image: url("/img/catalog-mobile/welcome-inner-mobile@1x.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
     text-align: center;
@@ -92,26 +92,26 @@
       width: 100%;
       min-height: 56px;
       height: auto;
-      background-image: url(/img/svg/intro-triangle-mobile.svg);
+      background-image: url("/img/svg/intro-triangle-mobile.svg");
       background-size: 100% 57px;
       background-repeat: no-repeat;
       background-position: bottom 0;
-      content: ' ';
+      content: " ";
     }
 
     @media (min-width: $tablet-width) {
       padding: 92px 0 117px 0;
-      background-image: url(/img/catalog-tablet/welcome-inner-tablet@1x.jpg);
+      background-image: url("/img/catalog-tablet/welcome-inner-tablet@1x.jpg");
       background-size: 100% auto;
 
       &::after {
-        background-image: url(/img/svg/intro-triangle-mobile.svg);
+        background-image: url("/img/svg/intro-triangle-mobile.svg");
       }
     }
 
     @media (min-width: $desktop-width) {
       padding: 92px 0 120px 0;
-      background-image: url(/img/catalog-desktop/welcome-inner-desktop@1x.jpg);
+      background-image: url("/img/catalog-desktop/welcome-inner-desktop@1x.jpg");
       background-size: 100% auto;
     }
   }

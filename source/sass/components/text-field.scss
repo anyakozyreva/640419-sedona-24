@@ -7,14 +7,10 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $mobile-width) {}
-
 .text-field__label {
   display: inline-block;
   padding: 10px 12px 0 0;
 }
-
-.text-field__input-holder {}
 
 .text-field__input {
   font-size: 18px;
@@ -24,10 +20,6 @@
   background-color: rgba(255, 255, 255, 1);
   border: none;
   outline: none;
-}
-
-@media (min-width: $mobile-width) {
-  .text-field__input {}
 }
 
 .text-field__input[placeholder] {

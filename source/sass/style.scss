@@ -3,69 +3,48 @@
 @import "./global/variables.scss";
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
-
 // components
 // index
 @import "./components/page.scss";
 @import "./components/page-header.scss";
 @import "./components/page-main.scss";
 @import "./components/main-nav.scss";
-
 // intro
 @import "./components/intro.scss";
-
 // button
 @import "./components/button.scss";
-
 // index reasons
 @import "./components/reasons.scss";
 @import "./components/reasons-item.scss";
-
 // index features
 @import "./components/features.scss";
 @import "./components/features-item.scss";
-
 // hotel-search
 @import "./components/hotel-search.scss";
-
 // map
 @import "./components/map.scss";
-
 // gallery
 @import "./components/gallery.scss";
 @import "./components/gallery-item.scss";
-
 // player
 @import "./components/player.scss";
-
 //video
 @import "./components/video.scss";
-
 // control
 @import "./components/control.scss";
 @import "./components/control-bar.scss";
-
 // footer
 @import "./components/page-footer.scss";
 @import "./components/social.scss";
-
 // branding HTMLacademy
 @import "./components/branding.scss";
-
-@import "./components/review-form.scss";
 @import "./components/text-field.scss";
-@import "./components/video.scss";
-
 // like
 @import "./components/like.scss";
-
-
 // form
 @import "./components/form.scss";
 @import "./components/review-form.scss";
 @import "./components/fieldset.scss";
-
-
 // modal
 @import "./components/modal-container.scss";
 // modal-success

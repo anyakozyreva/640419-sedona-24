@@ -1,6 +1,5 @@
 // features - item
 .features-item {
-  background-color: transparent;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 1);
 
@@ -9,17 +8,17 @@
 
     &--home {
       background-size: 37px 37px;
-      background-image: url(../img/svg/icon-house.svg);
+      background-image: url("../img/svg/icon-house.svg");
     }
 
     &--souvenir {
       background-size: 32px 38px;
-      background-image: url(../img/svg/icon-gift.svg);
+      background-image: url("../img/svg/icon-gift.svg");
     }
 
     &--eat {
       background-size: 40px 35px;
-      background-image: url(../img/svg/icon-burger.svg);
+      background-image: url("../img/svg/icon-burger.svg");
     }
   }
 
@@ -28,18 +27,18 @@
 
     &--home {
       background-size: 75px 72px;
-      background-image: url(../img/svg/icon-house.svg);
+      background-image: url("../img/svg/icon-house.svg");
     }
 
     &--souvenir {
       background-size: 76px 68px;
-      background-image: url(../img/svg/icon-gift.svg);
+      background-image: url("../img/svg/icon-gift.svg");
       order: 3;
     }
 
     &--eat {
       background-size: 64px 75px;
-      background-image: url(../img/svg/icon-burger.svg);
+      background-image: url("../img/svg/icon-burger.svg");
     }
   }
 
@@ -48,18 +47,18 @@
 
     &--home {
       background-size: 75px 72px;
-      background-image: url(../img/svg/icon-house.svg);
+      background-image: url("../img/svg/icon-house.svg");
     }
 
     &--souvenir {
       background-size: 76px 68px;
-      background-image: url(../img/svg/icon-gift.svg);
+      background-image: url("../img/svg/icon-gift.svg");
       order: 3;
     }
 
     &--eat {
       background-size: 64px 75px;
-      background-image: url(../img/svg/icon-burger.svg);
+      background-image: url("../img/svg/icon-burger.svg");
     }
   }
 }
